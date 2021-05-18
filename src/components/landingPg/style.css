@@ -1,0 +1,430 @@
+/* general styling */
+h1 {
+  font-size: 68px;
+  font-weight: 700;
+  line-height: 88px;
+}
+
+h5,
+h3 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 50px;
+  color: #190d2d;
+}
+
+strong {
+  color: #190d2d;
+}
+
+p {
+  font-size: 16px;
+  color: #646464;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+a {
+  display: block;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 36px;
+  color: #fff !important;
+  margin-top: 20px;
+}
+
+section {
+  padding: 100px;
+}
+
+/* top header section */
+.top-header {
+  margin: 0;
+  padding: 0px 100px 50px 100px;
+}
+
+.top-header-text {
+  max-width: 505px;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  margin-top: 80px;
+  margin-bottom: 130px;
+  text-align: left;
+}
+
+.top-header-text p {
+  color: #fff;
+  font-size: 20px;
+}
+
+/* learn about us section */
+
+.learn-card {
+  max-width: 500px;
+  width: 100%;
+  text-align: left;
+}
+
+/* trade section */
+.btn-div {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.trade-section,
+.help-section {
+  background-color: #f9f9f9;
+}
+
+.trade-flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.trade-flex img {
+  height: 393px;
+  width: 552px;
+
+  border-radius: 10px;
+}
+
+.launchers,
+.finances {
+  margin-top: 100px;
+}
+
+/* accordion section */
+.accordion-section {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 150px;
+}
+
+.accordion-section.colored {
+  background-color: #f9f9f9;
+}
+
+.accordion {
+  background-color: transparent;
+  color: #190d2d;
+  cursor: pointer;
+  padding-top: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: none;
+  outline: none !important;
+  transition: background-color 0.6s ease;
+  border-bottom: 1px solid #969696;
+  text-align: left;
+}
+
+.accordion.active {
+  border-bottom: none;
+}
+
+.accordion:hover,
+.active {
+  color: #e873a8 !important;
+}
+
+.accordion-title {
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.accordion-title:hover {
+  color: #e873a8 !important;
+}
+
+.accordion-icon {
+  transition: transform 0.6s ease;
+}
+
+/* rotate icon on active */
+.rotate {
+  transform: rotate(180deg);
+}
+
+/* accordion content */
+.accordion-content {
+  overflow: hidden;
+  transition: max-height 0.6s ease;
+  text-align: left;
+}
+
+.accordion-text {
+  padding-top: 5px;
+}
+
+/* help section */
+.help-centered-div {
+  max-width: 561px;
+  width: 100%;
+}
+
+.help-form-row {
+  margin: 50px 150px 150px 150px;
+}
+
+input,
+textarea {
+  padding: 15px !important;
+}
+
+textarea {
+  margin-top: 30px;
+}
+
+.call-us-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 50px 0;
+}
+
+.call-us-div p {
+  font-family: Palatino;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 0px;
+  color: #190d2d;
+}
+
+.call-us-div span {
+  color: #e873a8;
+}
+
+/* start trading section */
+.trading-sect {
+  position: relative;
+  background-color: #fff;
+  padding: 100px;
+}
+
+.trading-absolute {
+  border-color: #fff;
+  background-color: #fff;
+  box-shadow: 0 -19px 24px 2px rgba(41, 40, 40, 0.03);
+  margin-top: -250px;
+  height: 403px;
+  border-radius: 26px;
+  text-align: left;
+  padding: 50px;
+}
+
+.absolute-div {
+  width: 364px;
+}
+
+/* newsletter */
+.news-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.news-div h3,
+.news-div p {
+  color: #fff;
+}
+
+.news-form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.news-form .input-div {
+  width: 400px;
+}
+
+.news-form button {
+  margin-left: 20px;
+}
+
+.news-form > div {
+  margin: 0 10px;
+}
+
+@media screen and (max-width: 1024px) {
+  .top-header {
+    margin: 0;
+    padding: 0px 50px 100px 50px;
+  }
+  section {
+    padding: 100px 50px;
+    width: 100%;
+  }
+
+  .trade-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .trade-flex img {
+    object-fit: cover;
+    width: 400px;
+  }
+
+  .accordion-section {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .top-header {
+    margin: 0;
+    padding: 0px 30px 100px 30px;
+  }
+
+  section {
+    padding: 100px 30px;
+  }
+
+  .trade-flex {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .learn-section {
+    background-color: #fff;
+    flex-direction: column-reverse;
+  }
+
+  .finances {
+    flex-direction: column-reverse;
+  }
+
+  .trade-flex img {
+    object-fit: cover;
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  .accordion-section {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px;
+  }
+
+  .accordion-title {
+    font-weight: 700;
+    font-size: 18px;
+  }
+
+  .call-us-div {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 50px 0;
+  }
+
+  .help-form-row {
+    margin: 50px 70px 150px 70px;
+  }
+
+  .input-div {
+    margin-top: 30px;
+  }
+  .call-us-div p {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  a {
+    display: block;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 36px;
+    color: #fff !important;
+    margin-top: 20px;
+  }
+
+  section {
+    width: 100vw;
+  }
+
+  .news-form button {
+    margin-top: 30px;
+  }
+
+  .trading-sect {
+    position: relative;
+    background-color: #fff;
+    padding: 20px;
+  }
+
+  .trading-absolute {
+    border-color: #fff;
+    background-color: #fff;
+    box-shadow: 0 -19px 24px 2px rgba(41, 40, 40, 0.03);
+    margin-top: -250px;
+    height: 403px;
+    border-radius: 26px;
+    text-align: left;
+    padding: 50px;
+  }
+
+  .absolute-div {
+    max-width: 364px;
+    width: 100%;
+  }
+
+  .accordion-section {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0px;
+  }
+
+  .help-form-row {
+    margin: 50px 0px 150px 0px;
+  }
+
+  input,
+  textarea {
+    padding: 15px;
+    margin-top: 20px;
+  }
+
+  .call-us-div p {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  section {
+    padding: 100px 10px;
+  }
+  h1 {
+    font-size: 35px;
+  }
+
+  a {
+    font-size: 16px;
+  }
+
+  .top-header {
+    margin: 0;
+    padding: 0px 10px 50px 10px;
+  }
+}

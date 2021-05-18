@@ -1,0 +1,49 @@
+.mybtn {
+  background-color: #0e1f33;
+  color: #fff !important;
+  border-radius: 50px;
+  padding: 15px 35px;
+  font-size: 16px;
+  font-weight: 400;
+  border: none !important;
+  outline: none !important;
+}
+
+.padded-btn{
+  padding: 15px 55px;
+}
+
+@media screen and (max-width:1024px) {
+.mybtn {
+ 
+  padding: 15px 20px;
+  font-size: 16px;
+  font-weight: 400;
+  border: none !important;
+  outline: none !important;
+  
+}
+
+.padded-btn{
+  padding: 15px 55px;
+}
+
+}
+
+@media screen and (max-width:376px) {
+.mybtn {
+ 
+  padding: 15px 14px;
+  font-size: 14px;
+  font-weight: 400;
+  border: none !important;
+  outline: none !important;
+  
+}
+
+.padded-btn{
+  padding: 15px 30px;
+}
+
+}
+
