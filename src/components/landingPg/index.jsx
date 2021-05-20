@@ -5,9 +5,11 @@ import LearnSection from './LearnSection'
 import TradeSection from './TradeGrid'
 import AccordionSect from './AccordionSect'
 import HelpFormSection from './HelpForm'
-import StartTrading from './StartTrading'
+import StartTrading from '../StartTrading'
 import Newsletter from './Newsletter'
 import MyFooter from '../footer'
+import TestAccord from './TestAccord'
+import TestedAcc from './TestedAcc'
 
 function LandingPage() {
     return (
@@ -20,6 +22,7 @@ function LandingPage() {
             <StartTrading/>
             <Newsletter/>
             <MyFooter/>
+     
         </div>
     )
 }

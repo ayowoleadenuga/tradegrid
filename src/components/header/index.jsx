@@ -1,16 +1,18 @@
 import React from 'react'
 import MyButton from '../button'
-import Logo from '../../assets/TradeGridlogo.svg'
-import './style.css'
+import {Link} from 'react-router-dom'
 
-function MyNav() {
+import './style.css'
+import clsx from 'clsx'
+
+function MyNav({logo, clsName}) {
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">
-            <img src={Logo} alt="" />
-          </a>
+          <Link to="/" className="navbar-brand">
+            <img src={logo} alt="" />
+          </Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -25,30 +27,25 @@ function MyNav() {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ml-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link " aria-current="page" href="#">
+                <Link to="/about" className={clsx('nav-link ', clsName)}>
                   About
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
-                  How it works
-                </a>
+                <Link to="/works" className={clsx('nav-link ', clsName)}>
+                  How it Works
+                </Link>
               </li>
 
               <li className="nav-item">
-                <a
-                  className="nav-link"
-                  href="#"
-                  tabIndex="-1"
-                  aria-disabled="true"
-                >
-                  FAQ
-                </a>
+                <Link to="/" className={clsx('nav-link ', clsName)}>
+                 FAQ
+                </Link>
+                
               </li>
             </ul>
-           
-              <MyButton text="signup to start trading" path="/"/>
-           
+
+            <MyButton text="signup to start trading" path="/" />
           </div>
         </div>
       </nav>

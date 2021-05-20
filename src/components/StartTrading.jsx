@@ -1,8 +1,8 @@
 import React from 'react'
-import MyButton from '../button'
+import MyButton from './button'
 function StartTrading() {
     return (
-      <section className="trading-sect">
+      <section className="trading-sect ">
         <div className="trading-absolute">
           <div className="absolute-div">
             <h3>Ready to start Trading?</h3>

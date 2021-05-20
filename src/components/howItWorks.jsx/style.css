@@ -1,0 +1,61 @@
+.how-it-works h1 {
+  color: #fff;
+}
+
+.date-span {
+  color: #e873a8;
+  line-height: 20px;
+}
+
+.how-it-works {
+  margin: 80px auto;
+  text-align: center;
+  max-width: 819px;
+  width: 100%;
+}
+
+/* welcome section */
+
+.welcome-div {
+  margin: auto;
+  max-width: 991px;
+  width: 100%;
+}
+
+.welcome-sect h3 {
+  margin-bottom: 50px;
+}
+
+.benefit {
+  margin-top: 100px;
+  margin-bottom: 150px;
+}
+
+.benefit-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.benefit-img-div {
+  position: relative;
+}
+
+.img-content-div {
+  text-align: center;
+  position: absolute;
+  height: 184px;
+  width: 325px;
+  padding: 25px 15px;
+  z-index: 3;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 85%;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.img-content-div p{
+  font-size: 16px;
+}

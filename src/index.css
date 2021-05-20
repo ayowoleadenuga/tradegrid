@@ -14,3 +14,50 @@ body {
   padding: 0 !important;
 }
 
+/* general styling */
+h1 {
+  font-size: 68px;
+  font-weight: 700;
+  line-height: 88px;
+  
+}
+
+h3{
+  font-size: 36px;
+}
+
+h5{
+  font-size: 32px;
+}
+h5,
+h3 {
+  
+  font-weight: 700;
+  line-height: 50px;
+  color: #190d2d;
+}
+
+strong {
+  color: #190d2d;
+}
+
+p {
+  font-size: 16px;
+  color: #646464;
+  font-weight: 400;
+  line-height: 32px;
+  word-break: break-word;
+}
+
+a {
+  display: block;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 36px;
+  color: #fff !important;
+  margin-top: 20px;
+}
+
+section {
+  padding: 100px 150px;
+}

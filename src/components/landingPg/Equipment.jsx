@@ -25,9 +25,7 @@ function CardEquip() {
             />
           </div>
         </div>
-        
           <img src={Tanker} alt="" />
-        
       </div>
     )
 }

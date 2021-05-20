@@ -1,61 +1,26 @@
-/* general styling */
-h1 {
-  font-size: 68px;
-  font-weight: 700;
-  line-height: 88px;
-}
 
-h5,
-h3 {
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 50px;
-  color: #190d2d;
-}
-
-strong {
-  color: #190d2d;
-}
-
-p {
-  font-size: 16px;
-  color: #646464;
-  font-weight: 400;
-  line-height: 32px;
-}
-
-a {
-  display: block;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 36px;
-  color: #fff !important;
-  margin-top: 20px;
-}
-
-section {
-  padding: 100px;
-}
 
 /* top header section */
 .top-header {
   margin: 0;
   padding: 0px 100px 50px 100px;
+
 }
 
 .top-header-text {
   max-width: 505px;
   width: 100%;
-  text-align: center;
   color: #fff;
   margin-top: 80px;
   margin-bottom: 130px;
   text-align: left;
 }
 
-.top-header-text p {
+.white-p {
   color: #fff;
   font-size: 20px;
+  line-height: 
+36px;
 }
 
 /* learn about us section */
@@ -80,14 +45,13 @@ section {
 
 .trade-flex {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: flex-start;
 }
 
 .trade-flex img {
   height: 393px;
   width: 552px;
-
   border-radius: 10px;
 }
 
@@ -100,7 +64,7 @@ section {
 .accordion-section {
   display: flex;
   flex-direction: column;
-  padding: 20px 150px;
+  padding: 20px 100px;
 }
 
 .accordion-section.colored {
@@ -118,29 +82,31 @@ section {
   border: none;
   outline: none !important;
   transition: background-color 0.6s ease;
-  border-bottom: 1px solid #969696;
+  border-bottom: 1px solid #cccaca;
   text-align: left;
 }
 
 .accordion.active {
-  border-bottom: none;
+  border: none !important;
 }
 
-.accordion:hover,
-.active {
+.accordion:hover .active,
+.accordion-section:hover .accordion {
   color: #e873a8 !important;
 }
+
 
 .accordion-title {
   font-weight: 700;
   font-size: 22px;
 }
 
-.accordion-title:hover {
+.accordion-title:hover,
+.fa-chevron-down:hover {
   color: #e873a8 !important;
 }
 
-.accordion-icon {
+.fa-chevron-down {
   transition: transform 0.6s ease;
 }
 
@@ -167,7 +133,7 @@ section {
 }
 
 .help-form-row {
-  margin: 50px 150px 150px 150px;
+  margin: 50px 100px 150px 100px;
 }
 
 input,
@@ -203,7 +169,6 @@ textarea {
 .trading-sect {
   position: relative;
   background-color: #fff;
-  padding: 100px;
 }
 
 .trading-absolute {
@@ -258,6 +223,7 @@ textarea {
   .top-header {
     margin: 0;
     padding: 0px 50px 100px 50px;
+
   }
   section {
     padding: 100px 50px;
@@ -274,6 +240,8 @@ textarea {
     object-fit: cover;
     width: 400px;
   }
+
+
 
   .accordion-section {
     display: flex;

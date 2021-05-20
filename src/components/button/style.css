@@ -7,8 +7,12 @@
   font-weight: 400;
   border: none !important;
   outline: none !important;
+  transition: 0.7s ease;
 }
 
+.mybtn:hover{
+  background-color: #E873A8;
+}
 .padded-btn{
   padding: 15px 55px;
 }

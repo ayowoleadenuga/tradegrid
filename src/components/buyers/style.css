@@ -1,0 +1,31 @@
+.buyer-sect {
+  background-color: #f9f9f9;
+}
+
+.buyer-seller h1 {
+  margin-bottom: 20px;
+}
+
+.ordered-list {
+  padding: 15px;
+}
+
+.ordered-list li {
+  line-height: 36px;
+  color: #646464;
+}
+
+.nothing-text{
+    font-size: 24px;
+    color: #190D2D;
+    font-weight: 700;
+}
+
+/* create profile */
+.create-profile{
+    background-color: #F9F9F9;
+}
+
+/* ol{
+    list-style: decimal-leading-zero;
+} */

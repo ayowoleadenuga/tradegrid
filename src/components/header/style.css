@@ -6,5 +6,13 @@
     margin: 0 40px;
 }
 .navbar .nav-link{
-    color: #fff !important;
+    color: #fff ;
+}
+
+.navbar .nav-link:hover{
+    color: #E873A8 !important;
+}
+
+.navbar .dark-link{
+    color: #646464 !important;
 }
