@@ -9,7 +9,7 @@ import './style.css'
 const sectionStyle = {
   backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6) ), url(${PetrolTank})`,
   backgroundRepeat: 'no-repeat',
-  backgroundSize: '100vw ',
+  backgroundSize: '100vw 100%',
   backgroundPosition: 'center',
 }
 
