@@ -13,13 +13,14 @@ function CardLaunchers() {
         <div className="btn-div">
           <MyButton
             className="btn-text"
-            path="/"
+            path="/launchers"
             text="Learn more about city launchers"
           />
         </div>
       </div>
-
-      <img src={Student} alt="" />
+      <div className="img">
+        <img src={Student} alt="" />
+      </div>
     </div>
   )
 }

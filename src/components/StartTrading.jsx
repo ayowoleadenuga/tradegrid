@@ -12,7 +12,7 @@ function StartTrading() {
             </p>
             <MyButton
               className="btn-text"
-              path="/"
+              path="/signup"
               text="Sign up to start trading"
             />
           </div>

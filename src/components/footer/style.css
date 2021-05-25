@@ -63,6 +63,10 @@
   align-items: flex-end;
 }
 
+.footer .app-store{
+  display: flex;
+}
+
 @media screen and (max-width:1024px) {
 .footer {
   padding: 100px 50px;

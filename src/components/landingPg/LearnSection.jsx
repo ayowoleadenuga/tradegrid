@@ -1,11 +1,11 @@
 import React from 'react'
 import MyButton from '../button'
-import Driller from '../../assets/driller.jpg'
+import HomePhone from '../../assets/home-phone.png'
 
 function LearnSection() {
   return (
     <section className=" trade-flex learn-section">
-      <img src={Driller} alt="" />
+      <img src={HomePhone} alt="" className="border" />
       <div className="learn-card border-0">
         <h5 className="card-title">TradeGrid Ninja has Arrived!</h5>
         <p className="card-subtitle mb-2 mt-4">
@@ -22,10 +22,10 @@ function LearnSection() {
           mission-critical businesses who insist on having the best or nothing!
         </p>
         <div className="btn-div">
-          <MyButton className="btn-text" path="/" text="Learn more as a buyer" />
+          <MyButton className="btn-text" path="/buyer" text="Learn more as a buyer" />
           <MyButton
             className="btn-text"
-            path="/"
+            path="/seller"
             text="Learn more as a seller"
           />
         </div>

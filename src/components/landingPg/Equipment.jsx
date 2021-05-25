@@ -20,12 +20,14 @@ function CardEquip() {
           <div className="btn-div">
             <MyButton
               className="btn-text"
-              path="/"
+              path="/signup"
               text="Click to gain access"
             />
           </div>
         </div>
+        <div className="img">
           <img src={Tanker} alt="" />
+        </div>
       </div>
     )
 }

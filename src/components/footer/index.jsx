@@ -84,9 +84,13 @@ function MyFooter() {
           </div>
           <div className="footer-flex-div">
             <small>Copyright © 2019 TradeGrid, LLC.</small>
-            <div>
-              <img src={Apple} alt="" className="mr-5"/>
-              <img src={Google} alt="" className="mr-5"/>
+            <div className="app-store">
+              <a href="#">
+                <img src={Apple} alt="" className="mr-5" />
+              </a>
+              <a href="#">
+                <img src={Google} alt="" className="mr-5" />
+              </a>
             </div>
           </div>
         </footer>

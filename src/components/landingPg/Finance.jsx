@@ -4,7 +4,10 @@ import MyButton from '../button'
 function CardFinance() {
     return (
       <div className="trade-flex  finances">
+        <div className="img-right img">
           <img src={Executive} alt="" />
+        </div>
+
         <div className="learn-card border-0">
           <h5 className="card-title">TradeGrid Finance</h5>
           <p className="card-subtitle mb-2 mt-4">
@@ -21,7 +24,7 @@ function CardFinance() {
           <div className="btn-div">
             <MyButton
               className="btn-text"
-              path="/"
+              path="/about"
               text="Learn more about our range of financial products "
             />
           </div>

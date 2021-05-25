@@ -1,4 +1,5 @@
-.buyer-sect {
+.buyer-sect,
+.buyer-profile-sect {
   background-color: #f9f9f9;
 }
 
@@ -26,6 +27,9 @@
     background-color: #F9F9F9;
 }
 
-/* ol{
-    list-style: decimal-leading-zero;
-} */
+.app-link{
+  display: inline;
+  color:#E873A8 !important;
+font-size: 16px;
+font-weight: 400;
+}

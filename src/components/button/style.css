@@ -8,46 +8,47 @@
   border: none !important;
   outline: none !important;
   transition: 0.7s ease;
+  text-decoration: none !important;
 }
 
-.mybtn:hover{
-  background-color: #E873A8;
+.mybtn:hover {
+  background-color: #e873a8;
 }
-.padded-btn{
-  padding: 15px 55px;
-}
-
-@media screen and (max-width:1024px) {
-.mybtn {
- 
-  padding: 15px 20px;
+.padded-btn {
+  
+  height: 60px;
   font-size: 16px;
-  font-weight: 400;
-  border: none !important;
-  outline: none !important;
-  
+  width: 178px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
 }
 
-.padded-btn{
-  padding: 15px 55px;
+@media screen and (max-width: 1024px) {
+  .mybtn {
+    padding: 15px 20px;
+    font-size: 16px;
+    font-weight: 400;
+    border: none !important;
+    outline: none !important;
+  }
+
+  .padded-btn {
+    padding: 15px 55px;
+  }
 }
 
-}
+@media screen and (max-width: 376px) {
+  .mybtn {
+    padding: 15px 14px;
+    font-size: 14px;
+    font-weight: 400;
+    border: none !important;
+    outline: none !important;
+  }
 
-@media screen and (max-width:376px) {
-.mybtn {
- 
-  padding: 15px 14px;
-  font-size: 14px;
-  font-weight: 400;
-  border: none !important;
-  outline: none !important;
-  
+  .padded-btn {
+    padding: 15px 30px;
+  }
 }
-
-.padded-btn{
-  padding: 15px 30px;
-}
-
-}
-

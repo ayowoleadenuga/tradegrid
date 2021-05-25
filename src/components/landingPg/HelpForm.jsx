@@ -1,7 +1,46 @@
 import React from 'react'
-import MyButton from '../button'
+import { makeStyles, withStyles } from '@material-ui/core/styles'
+import { TextField } from '@material-ui/core'
+const CssTextField = withStyles({
+  root: {
+    '& label.Mui-focused': {
+      color: 'rgba(150, 150, 150, 0.2)',
+    },
+    '& .MuiInput-underline:after': {
+      borderBottomColor: 'white',
+    },
+    '& .MuiOutlinedInput-root': {
+      '& fieldset': {
+        borderColor: 'rgba(150, 150, 150, 0.2)',
+        background: '#fff',
+  
+      },
+      '&:hover fieldset': {
+        borderColor: 'rgba(150, 150, 150, 0.2)',
+      },
+      '&.Mui-focused fieldset': {
+        borderColor: 'rgba(150, 150, 150, 0.2)',
+      },
+      
+    },
+  },
+})(TextField)
 
+const useStyles = makeStyles((theme) => ({
+  root: {
+    display: 'flex',
+    justifyContent: 'space-between',
+    width:'100%',
+    marginBottom:'50px'
+  },
+  margin: {
+    margin: theme.spacing(0),
+    width:'67ch'
+   
+  },
+}))
 function HelpFormSection() {
+   const classes = useStyles()
   return (
     <section className="help-section ">
       <div className="text-center help-centered-div  container">
@@ -13,31 +52,29 @@ function HelpFormSection() {
           phone number below.
         </p>
       </div>
-      <form className="row help-form-row ">
-        <div className="col-lg-6 col-sm-12 input-div">
-          <input
-            type="text"
-            className="form-control"
-            placeholder="Name"
-            aria-label="Name"
+      <form noValidate autoComplete="off" className="myform">
+        <div className={classes.root}>
+          <CssTextField
+            className={classes.margin}
+            label="Your name"
+            variant="outlined"
+            id="customoutlined-input"
+          />
+          <CssTextField
+            className={classes.margin}
+            label="Your email"
+            variant="outlined"
+            id="custom-css-outlined-input"
           />
         </div>
-        <div className="col-lg-6 col-sm-12 input-div">
-          <input
-            type="email"
-            className="form-control"
-            placeholder="Email"
-            aria-label="Email"
-          />
-        </div>
-        <div className="form-floating ">
-          <textarea
-            style={{ height: '147px' }}
-            className="form-control"
-            placeholder="Message"
-            id="floatingTextarea2"
-          ></textarea>
-        </div>
+        <CssTextField
+          label="Your Message"
+          variant="outlined"
+          multiline
+          rows={4}
+          style={{ width: '100%' }}
+        />
+
         <div className="call-us-div">
           <p>
             Or call us on <span>+1(312) 779 9374</span>

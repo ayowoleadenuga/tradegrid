@@ -29,6 +29,14 @@ h3{
 h5{
   font-size: 32px;
 }
+
+h6{
+  font-size: 22px;
+  line-height: 36px;
+  font-weight: 700;
+   color: #190d2d;
+}
+
 h5,
 h3 {
   
