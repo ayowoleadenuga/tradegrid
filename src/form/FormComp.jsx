@@ -4,6 +4,8 @@ import Logo from '../assets/TradeGridlogo.svg'
 import Small from '../assets/small.svg'
 import Medium from '../assets/medium.svg'
 import Large from '../assets/large.svg'
+import {Link} from 'react-router-dom'
+
 function FormComp({clsName, children}) {
     return (
       <div className="form-sect">
@@ -12,7 +14,10 @@ function FormComp({clsName, children}) {
           <img src={Large} alt="" className="large" />
           <img src={Medium} alt="" className="medium" />
           <div className="my-absolute">
-            <img src={Logo} alt="" />
+            <Link to="/" className="navbar-brand">
+              <img src={Logo} alt="" />
+            </Link>
+
             <h3>Welcome</h3>
             <p>TradeGrid has just arrived in your city! </p>
             <p>

@@ -33,3 +33,10 @@
 font-size: 16px;
 font-weight: 400;
 }
+
+@media (max-width:1024px){
+  .profile-left img{
+    width: 400px;
+    border: 2px solid green;
+  }
+}

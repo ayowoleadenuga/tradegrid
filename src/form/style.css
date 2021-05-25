@@ -25,24 +25,25 @@
   top: 100px;
   right: 21.9px;
 }
+
 .form-welcome-sect {
   background-color: #0e1f33;
   max-width: 563px;
   width: 100%;
   min-height: 900px;
   height: 100vh;
-  padding: 70px 30px;
+  padding: 50px 30px;
   position: relative;
 }
 
 .my-absolute {
   position: absolute;
-  z-index: 2000;
+  z-index: 200;
 }
 
 .my-absolute h3 {
   color: #fff;
-  margin-top: 70px;
+  margin-top: 50px;
   margin-bottom: 50px;
 }
 

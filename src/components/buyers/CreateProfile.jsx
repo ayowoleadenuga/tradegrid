@@ -6,7 +6,7 @@ function CreateProfile({ title, children}) {
   return (
     <section className="buyer-profile-sect">
       <div className="deal-source">
-        <div className="left-deal">
+        <div className="left-deal profile-left">
           <img src={PhoneCircle} alt="" />
         </div>
         <div className="right-deal">

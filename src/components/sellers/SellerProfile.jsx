@@ -6,7 +6,8 @@ import TimelineItem from '@material-ui/lab/TimelineItem'
 import TimelineSeparator from '@material-ui/lab/TimelineSeparator'
 import TimelineConnector from '@material-ui/lab/TimelineConnector'
 import TimelineContent from '@material-ui/lab/TimelineContent'
-
+import Google from '../../assets/google.svg'
+import Apple from '../../assets/apple.svg'
 const useStyles = makeStyles({
   timeline: {
     border: '2px solid red',
@@ -91,6 +92,14 @@ function SellerProfile() {
           </TimelineContent>
         </TimelineItem>
       </Timeline>
+      <div className="app-store">
+        <a href="#">
+          <img src={Apple} alt="" className="mr-5" />
+        </a>
+        <a href="#">
+          <img src={Google} alt="" className="mr-5" />
+        </a>
+      </div>
     </CreateProfile>
   )
 }

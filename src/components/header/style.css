@@ -13,3 +13,7 @@
 .navbar .dark-link{
     color: #646464 !important;
 }
+
+.navbar-brand img{
+    width: 150px;
+}

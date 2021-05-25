@@ -63,8 +63,13 @@
   align-items: flex-end;
 }
 
-.footer .app-store{
+ .app-store{
   display: flex;
+
+}
+
+.app-store img{
+  border-radius: 8px;
 }
 
 @media screen and (max-width:1024px) {
