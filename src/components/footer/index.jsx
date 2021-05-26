@@ -7,6 +7,7 @@ import { FaTwitter, FaFacebookF } from 'react-icons/fa'
 import {IconContext} from 'react-icons'
 import Google from '../../assets/google.svg'
 import Apple from '../../assets/apple.svg'
+import {Link} from 'react-router-dom'
 
 function MyFooter() {
     return (
@@ -32,13 +33,10 @@ function MyFooter() {
               <h4>Company</h4>
               <ul>
                 <li>
-                  <a href="#">About Us</a>
+                  <Link to="/about">About Us</Link>
                 </li>
                 <li>
-                  <a href="#">How it Works</a>
-                </li>
-                <li>
-                  <a href="#">Tradegrid Platform</a>
+                  <Link to="/">Tradegrid Platform</Link>
                 </li>
               </ul>
             </div>
@@ -46,10 +44,10 @@ function MyFooter() {
               <h4>Services</h4>
               <ul>
                 <li>
-                  <a href="#">Corporate Buyer</a>
+                  <Link to="/buyers">Corporate Buyer</Link>
                 </li>
                 <li>
-                  <a href="#">Corporate Seller</a>
+                  <Link to="/sellers">Corporate Seller</Link>
                 </li>
               </ul>
             </div>
@@ -57,25 +55,25 @@ function MyFooter() {
               <h4>Help</h4>
               <ul>
                 <li>
-                  <a href="#">FAQ</a>
+                  <Link to="/">FAQ</Link>
                 </li>
                 <li>
-                  <a href="#">Privacy Policy</a>
+                  <Link to="/">Privacy Policy</Link>
                 </li>
                 <li>
-                  <a href="#">Trems and Conditions</a>
+                  <Link to="/">Terms and Conditions</Link>
                 </li>
                 <li>
-                  <a href="#">Contact Us</a>
+                  <Link to="/">Contact Us</Link>
                 </li>
               </ul>
             </div>
           </div>
           <div className="icon-div mb-5">
-            <a href="#" className="icon-link">
+            <a href="/" className="icon-link">
               <FaFacebookF />
             </a>
-            <a href="#" className="icon-link">
+            <a href="/" className="icon-link">
               <FaTwitter />
             </a>
             <a href="#" className="icon-link">

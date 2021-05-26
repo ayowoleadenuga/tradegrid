@@ -1,19 +1,118 @@
-
-.navbar .nav-item{
-    margin: 0 40px;
+.mynavbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 70px;
 }
-.navbar .nav-link{
-    color: #fff ;
+
+.mynavbar ul {
+    display: flex;
+    list-style: none;
 }
 
-.navbar .nav-link:hover{
+.mynavbar ul li{
+    margin: 0 30px;
+}
+
+.mynavbar ul li .nav-link:hover{
     color: #E873A8 !important;
 }
 
-.navbar .dark-link{
+.mynavbar .right-nav{
+    display: flex;
+    justify-content: space-between;
+} 
+
+.mynavbar .dark-link{
     color: #646464 !important;
 }
 
+.navbar-brand{
+    margin-top: 0px !important;
+}
 .navbar-brand img{
     width: 150px;
+}
+
+ .iconbar {
+    cursor: pointer;
+    display: none;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 30px;
+    height: 4px;
+    background: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.bar2 {
+    width: 25px;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+@media (max-width:768px) {
+   
+    .iconbar {
+        cursor: pointer;
+        display: block;
+    }
+
+    .mynavbar .right-nav {
+        display: none;
+        justify-content: start;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 70%;
+        background-color: #fff;
+        z-index: 1000;
+        padding: 30px 30px;
+        transition: 0.3s;
+        transform: translateX(-700px);
+    }
+
+    .show-nav{
+        transform: translateX(0);
+    }
+
+    .mynavbar .li {
+        line-height: 100px;
+        margin-left: 0;
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+
+    .mynavbar li::after {
+        content: '';
+        display: none;
+    }
+
+    .mynavbar ul{
+        display: block;
+    }
+    .mynavbar li a{
+        color: #E873A8 !important;
+        font-size: 20px;
+    }
+
 }

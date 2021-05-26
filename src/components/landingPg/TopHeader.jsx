@@ -11,7 +11,7 @@ const sectionStyle = {
   // backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6) ), url(${PetrolTank})`,
   backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6) ), url(${BgVideo})`,
   backgroundRepeat: 'no-repeat',
-  backgroundSize: '100vw ',
+  backgroundSize: '100vw 100%',
   backgroundPosition: 'center',
   height: '100vh'
 }

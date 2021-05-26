@@ -30,14 +30,14 @@ const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
     justifyContent: 'space-between',
+    flexWrap:'wrap',
     width:'100%',
     marginBottom:'50px'
   },
-  margin: {
-    margin: theme.spacing(0),
-    width:'67ch'
+  // margin: {
+  //   marginTop: '40px',
    
-  },
+  // },
 }))
 function HelpFormSection() {
    const classes = useStyles()
@@ -55,13 +55,12 @@ function HelpFormSection() {
       <form noValidate autoComplete="off" className="myform">
         <div className={classes.root}>
           <CssTextField
-            className={classes.margin}
             label="Your name"
             variant="outlined"
             id="customoutlined-input"
           />
           <CssTextField
-            className={classes.margin}
+            className="margined-input"
             label="Your email"
             variant="outlined"
             id="custom-css-outlined-input"
@@ -72,6 +71,7 @@ function HelpFormSection() {
           variant="outlined"
           multiline
           rows={4}
+          className="my-textarea"
           style={{ width: '100%' }}
         />
 

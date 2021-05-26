@@ -27,6 +27,13 @@
     background-color: #F9F9F9;
 }
 
+
+ .MuiTimelineItem-missingOppositeContent:before{
+      flex: 0 !important;
+      content: '';
+      padding: 0 !important
+    }
+    
 .app-link{
   display: inline;
   color:#E873A8 !important;
