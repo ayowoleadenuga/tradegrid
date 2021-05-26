@@ -22,6 +22,12 @@
     font-weight: 700;
 }
 
+.MuiTimelineItem-missingOppositeContent:before {
+  flex: 0 !important;
+  content: "";
+  padding: 0 !important;
+}
+
 /* create profile */
 .create-profile{
     background-color: #F9F9F9;
@@ -43,7 +49,6 @@
 
 @media (max-width:1024px){
   .profile-left img{
-    width: 400px;
-    border: 2px solid green;
+    width: 100%;
   }
 }

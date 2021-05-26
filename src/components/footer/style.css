@@ -65,6 +65,8 @@
 
 .app-store {
   display: flex;
+  flex-wrap: wrap;
+
 }
 
 .app-store img {
