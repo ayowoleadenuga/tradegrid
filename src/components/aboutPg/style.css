@@ -124,6 +124,9 @@
   max-width: 550px;
   width: 100%;
 }
+.right-deal > img {
+  width: inherit;
+}
 
 .check-span {
   object-fit: cover;

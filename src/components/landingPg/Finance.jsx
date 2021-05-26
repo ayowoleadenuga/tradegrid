@@ -25,6 +25,7 @@ function CardFinance() {
             <MyButton
               className="btn-text"
               path="/about"
+              section="finance"
               text="Learn more about our range of financial products "
             />
           </div>

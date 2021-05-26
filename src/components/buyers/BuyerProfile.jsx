@@ -10,16 +10,11 @@ import Google from '../../assets/google.svg'
 import Apple from '../../assets/apple.svg'
 const useStyles = makeStyles({
   timeline: {
-    border: '2px solid red',
-    paddingLeft: 0,
     marginTop:30,
     width:'100%',
-    display: 'flex',
-    justifyContent:'flex-start',
-    textAlign:'left'
+    padding: 0
   },
   timelineContentContainer: {
-    minWidth: '500px',
     paddingBottom:40,
   },
   timelineContent: {
