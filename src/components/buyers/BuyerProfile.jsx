@@ -8,17 +8,18 @@ import TimelineConnector from '@material-ui/lab/TimelineConnector'
 import TimelineContent from '@material-ui/lab/TimelineContent'
 import Google from '../../assets/google.svg'
 import Apple from '../../assets/apple.svg'
+
 const useStyles = makeStyles({
   timeline: {
     marginTop:30,
     width:'100%',
-    padding: 0
+    padding: 0,
   },
 
   timelineContentContainer: {
     paddingBottom:40,
     width: '100%',
-
+  },
   timelineIcon: {
     fontSize: '36px',
     color: '#E873A8',
