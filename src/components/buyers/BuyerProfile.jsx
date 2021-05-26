@@ -12,23 +12,32 @@ const useStyles = makeStyles({
   timeline: {
     border: '2px solid red',
     paddingLeft: 0,
-    marginTop:30,
-    width:'100%',
+    marginTop: 30,
+    width: '100%',
     display: 'flex',
-    justifyContent:'flex-start',
-    textAlign:'left'
+    justifyContent: 'flex-start',
   },
+
   timelineContentContainer: {
-    minWidth: '500px',
-    paddingBottom:40,
+    '&.MuiTimelineItem-missingOppositeContent:before': {
+      flex: 0,
+      content: '',
+      padding: '0px 0px',
+    },
+    paddingBottom: 40,
   },
   timelineContent: {
+    '&.MuiTimelineItem-missingOppositeContent:before': {
+      flex: 0,
+      content: '',
+      padding: '0px 0px',
+    },
     width: '100%',
   },
   timelineIcon: {
     fontSize: '36px',
     color: '#E873A8',
-    marginLeft:'0px'
+    marginLeft: '0px',
   },
   timelineConnector: {
     background: '#E873A8',
@@ -38,8 +47,11 @@ const useStyles = makeStyles({
 function BuyerProfile() {
     const classes = useStyles()
     return (
-      <CreateProfile title="Create a Buyer Profile to start trading" className="user-profile">
-        <Timeline className={classes.timeline}>
+      <CreateProfile
+        title="Create a Buyer Profile to start trading"
+        className="user-profile"
+      >
+        <Timeline className={classes.timeline} >
           <TimelineItem>
             <TimelineSeparator>
               <div className={classes.timelineIcon}>01</div>

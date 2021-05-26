@@ -30,12 +30,12 @@ const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
     justifyContent: 'space-between',
+    flexWrap:'wrap',
     width:'100%',
     marginBottom:'50px'
   },
   margin: {
-    margin: theme.spacing(0),
-    width:'67ch'
+    margin: '20px 0px',
    
   },
 }))
@@ -72,6 +72,7 @@ function HelpFormSection() {
           variant="outlined"
           multiline
           rows={4}
+          className="my-textarea"
           style={{ width: '100%' }}
         />
 

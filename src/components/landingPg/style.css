@@ -3,6 +3,7 @@
   margin: 0;
   padding-left: 100px;
   padding-right: 100px;
+  padding-bottom: 180px;
   
 }
 
@@ -10,8 +11,7 @@
   max-width: 505px;
   width: 100%;
   color: #fff;
-  margin-top: 80px;
-  padding-bottom: 150px;
+  margin-top: 50px;
   text-align: left;
 }
 
@@ -51,13 +51,16 @@
 
 .trade-flex .img, .trade-flex .img-right {
   height:450px;
-  width: 552px;
+  max-width: 570px;
+  width: 100%;
   position: relative;
+  border: 3px solid blue;
+  margin-bottom: 50px;
 }
 
 .trade-flex .img img{
   object-fit: cover;
-  width: 100%;
+  width: 500px;
   height: 382px;
   position: absolute;
   z-index: 200;
@@ -65,7 +68,7 @@
 }
 
 .trade-flex .img-right img{
-  left: 50px;
+  left: 20px;
 }
 
 .trade-flex .img::after,
@@ -73,9 +76,9 @@
   content: '';
   position: absolute;
    height: 321px;
-  width: 100%;
-  top: 100px;
-  left: 50px;
+  width: 500px;
+  top: 80px;
+  left: 20px;
    border-radius: 10px;
   background-color: #e873a8;
   z-index:2 ;
@@ -164,6 +167,9 @@
   margin: 80px 0px 200px 0px;
 }
 
+.myform input{
+  width: 550px;
+}
 .textfield-div {
   margin-bottom: 60px;
   width: 100%;
@@ -260,10 +266,10 @@
   }
 
  .trade-flex .img{
-   margin-left: 50px;
+   margin-left: 40px;
  } 
  .trade-flex .img-right {
-  margin-left: -20px ;
+  margin-left: -10px ;
 }
 
 .trade-flex .img img{
@@ -293,9 +299,13 @@
     flex-direction: column;
     padding: 20px 50px;
   }
+
+  .myform input{
+  width: 400px;
+}
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .top-header {
     margin: 0;
     padding: 0px 30px 100px 30px;
@@ -390,6 +400,11 @@
   .call-us-div p {
     margin-top: 50px;
   }
+
+.my-textarea{
+ background-color: green !important;
+ margin-top: 0px;
+}
 }
 
 @media screen and (max-width: 540px) {
