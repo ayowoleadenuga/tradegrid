@@ -4,7 +4,7 @@ import Check from '../../assets/check.svg'
 function TradeFinance() {
   return (
       <>
-       <h5 className="title-hidden">Deal Sourcing</h5>
+       <h5 className="title-hidden">Trade Financing</h5>
     <div className="deal-source">
       {/* left-div */}
       <div className="left-deal">

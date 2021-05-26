@@ -207,10 +207,10 @@
 
 @media screen and (max-width:790px){
   .tabs {
-  padding: 15px 0;
-  font-size: 20px;
+  padding: 20px 0;
+  font-size: 22px;
   line-height: 20px;
-  text-align: left;
+  width: 100%;
 }
 
 .left-deal,
@@ -239,7 +239,8 @@
 
 .product-sect .title-hidden{
   display: block;
-  font-size: 28px;
+  font-size: 32px;
+  color: #e873a8;
 }
 
   .deal-source {

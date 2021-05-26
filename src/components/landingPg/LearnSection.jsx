@@ -5,7 +5,10 @@ import HomePhone from '../../assets/home-phone.png'
 function LearnSection() {
   return (
     <section className=" trade-flex learn-section">
-      <img src={HomePhone} alt="" className="border" />
+      <div className="img">
+        <img src={HomePhone} alt="" className="home-phone" />
+      </div>
+
       <div className="learn-card border-0">
         <h5 className="card-title">TradeGrid Ninja has Arrived!</h5>
         <p className="card-subtitle mb-2 mt-4">
@@ -21,10 +24,13 @@ function LearnSection() {
           exceptional trading experience is served, especially designed for
           mission-critical businesses who insist on having the best or nothing!
         </p>
-        <div className="btn-div">
-          <MyButton className="btn-text" path="/buyer" text="Learn more as a buyer" />
+        <div className="btn-div learn-btn-div">
           <MyButton
-            className="btn-text"
+            path="/buyer"
+            text="Learn more as a buyer"
+          />
+          <MyButton
+           
             path="/seller"
             text="Learn more as a seller"
           />

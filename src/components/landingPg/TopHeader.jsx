@@ -16,7 +16,6 @@ const sectionStyle = {
 function TopHeader() {
   return (
     <div className="top-header" style={sectionStyle}>
-     
         <MyNav logo={Logo} />
         <div className="top-header-text">
           <h1>Earth’s Oil & Gas Marketplace</h1>

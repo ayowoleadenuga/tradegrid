@@ -4,7 +4,7 @@ import MyButton from '../button'
 function CardFinance() {
     return (
       <div className="trade-flex  finances">
-        <div className="img-right img">
+        <div className="img">
           <img src={Executive} alt="" />
         </div>
 

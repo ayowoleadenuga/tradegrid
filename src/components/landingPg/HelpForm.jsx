@@ -34,10 +34,10 @@ const useStyles = makeStyles((theme) => ({
     width:'100%',
     marginBottom:'50px'
   },
-  margin: {
-    margin: '20px 0px',
+  // margin: {
+  //   marginTop: '40px',
    
-  },
+  // },
 }))
 function HelpFormSection() {
    const classes = useStyles()
@@ -55,13 +55,12 @@ function HelpFormSection() {
       <form noValidate autoComplete="off" className="myform">
         <div className={classes.root}>
           <CssTextField
-            className={classes.margin}
             label="Your name"
             variant="outlined"
             id="customoutlined-input"
           />
           <CssTextField
-            className={classes.margin}
+            className="margined-input"
             label="Your email"
             variant="outlined"
             id="custom-css-outlined-input"
