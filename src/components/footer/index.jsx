@@ -17,7 +17,7 @@ function MyFooter() {
         <footer className="footer">
           <div className=" footer-row">
             <div className=" footer-col footer-first ">
-              <a className="navbar-brand mb-5 mt-0" href="#">
+              <a className="navbar-brand mb-5 mt-0" href="/">
                 <img src={Logo} alt="" />
               </a>
               <div className="mb-5">
@@ -35,15 +35,15 @@ function MyFooter() {
                 <a href="/" className="icon-link">
                   <FaTwitter />
                 </a>
-                <a href="#" className="icon-link">
+                <a href="/" className="icon-link">
                   <GrInstagram />
                 </a>
               </div>
               <div className="app-store hidden">
-                <a href="#">
+                <a href="/">
                   <img src={Apple} alt="" className="mr-5" />
                 </a>
-                <a href="#">
+                <a href="/">
                   <img src={Google} alt="" className="mr-5" />
                 </a>
               </div>
@@ -92,10 +92,10 @@ function MyFooter() {
           <div className="footer-flex-div">
             <small>Copyright © 2019 TradeGrid, LLC.</small>
             <div className="app-store active">
-              <a href="#">
+              <a href="/">
                 <img src={Apple} alt="" className="mr-5" />
               </a>
-              <a href="#">
+              <a href="/">
                 <img src={Google} alt="" className="mr-5" />
               </a>
             </div>

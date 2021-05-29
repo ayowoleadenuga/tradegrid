@@ -1,6 +1,6 @@
 import React from 'react'
 import { makeStyles, withStyles } from '@material-ui/core/styles'
-import { TextField, MenuItem, Button } from '@material-ui/core'
+import { TextField, MenuItem } from '@material-ui/core'
 import { Link } from 'react-router-dom'
 
 const CssTextField = withStyles({
@@ -36,8 +36,8 @@ const useStyles = makeStyles((theme) => ({
   },
   margin: {
     margin: theme.spacing(0),
-    maxWidth: '60ch',
-    width: '100%',
+    // maxWidth: '60ch',
+    // width: '100%',
     marginBottom: '50px',
   },
 }))

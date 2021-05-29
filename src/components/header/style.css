@@ -93,7 +93,7 @@
   
   .mynavbar .right-nav {
     display: flex;
-    justify-content: start;
+    justify-content:flex-start;
     align-items: center;
     flex-direction: column;
     position: absolute;
@@ -135,9 +135,12 @@
     display: none;
   }
 
-  .mynavbar ul {
-    display: block;
-  }
+ .mynavbar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 }
 
 @media screen and (max-width:380px){
