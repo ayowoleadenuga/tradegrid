@@ -38,9 +38,6 @@
   }
 }
 
-/* @media screen and(max-width:768px){
-  .nav-b
-} */
 @media screen and (max-width: 376px) {
   .mybtn {
     padding: 15px 14px;

@@ -2,7 +2,7 @@ import React from 'react'
 import './style.css'
 import TopBuyer from './TopBuyer'
 import MyFooter from '../footer'
-import Home from '../../assets/home.png'
+import Home from '../../assets/buyer-phone.png'
 import AdvertBuy from './Advert'
 import BuyerProfile from './BuyerProfile'
 

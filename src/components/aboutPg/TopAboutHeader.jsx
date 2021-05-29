@@ -14,7 +14,10 @@ const sectionStyle = {
 function AboutHeader() {
   return (
     <div className="top-header" style={sectionStyle}>
-      <MyNav logo={Logo} active="/active"/>
+      <div className="web-nav">
+        <MyNav logo={Logo} active="/active" />
+      </div>
+
       <div className="about-header  container">
         <h1>About Us</h1>
         <p className="white-p">

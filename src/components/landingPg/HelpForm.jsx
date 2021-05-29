@@ -47,9 +47,9 @@ function HelpFormSection() {
         <h3>How can we help?</h3>
         <p>
           If you have any enquiries you can email us at
-          support@thetradegrid.com. You can also drop a message via the form
-          below or speak to one of our customer service agent by clicking on the
-          phone number below.
+          <strong> support@thetradegrid.com.</strong> You can also drop a message
+          via the form below or speak to one of our customer service agent by
+          clicking on the phone number below.
         </p>
       </div>
       <form noValidate autoComplete="off" className="myform">

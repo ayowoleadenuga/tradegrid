@@ -13,7 +13,9 @@ const sectionStyle = {
 function TopWork() {
     return (
       <div className="top-header" style={sectionStyle}>
-        <MyNav logo={Logo} />
+        <div className="web-nav">
+          <MyNav logo={Logo}  />
+        </div>
         <div className=" how-it-works  container">
           <h1>TradeGrid City Launchers Challenge 2021</h1>
           <p className="white-p">Sub-Saharan Africa/Nigeria</p>

@@ -19,37 +19,21 @@ const sectionStyle = {
 function TopHeader() {
   return (
     <div className="top-header" style={sectionStyle}>
-      <video
-        autoPlay
-        loop
-        muted
-        style={{
-          position: "absolute",
-          width: "100%",
-          left: "50%",
-          top: "50%",
-          height: "100%",
-          objectFit: "cover",
-          transform: "translate(-50%, -50%)",
-          zIndex: "-1",
-        }}
-      >
-        <source src={BgVideo} type="video/mp4" />
-      </video>
-        <MyNav logo={Logo} />
-        <div className="top-header-text">
-          <h1>Earth’s Oil & Gas Marketplace</h1>
-          <p className="white-p">
-            Connect to over 50,000 Suppliers and Off-takers; access the best
-            deals in a click.
-          </p>
-          <MyButton text="Sign up to start trading" path="/signup" />
-          <Link to="/">
-            Learn more about the TradeGrid® platform and products.
-          </Link>
-        </div>
+      <div className="web-nav">
+        <MyNav logo={Logo}  />
       </div>
-    
+      <div className="top-header-text">
+        <h1>Earth’s Oil & Gas Marketplace</h1>
+        <p className="white-p">
+          Connect to over 50,000 Suppliers and Off-takers; access the best deals
+          in a click.
+        </p>
+        <MyButton text="Sign up to start trading" path="/signup" />
+        <Link to="/">
+          Learn more about the TradeGrid® platform and products.
+        </Link>
+      </div>
+    </div>
   )
 }
 

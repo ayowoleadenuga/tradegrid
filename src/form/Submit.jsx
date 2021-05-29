@@ -50,8 +50,8 @@ function Submit() {
         <input
           type="text"
           class="form-control"
-          placeholder="Business Name"
-          aria-label="Business name"
+          placeholder="Average weekly drop downs on volumes"
+          aria-label="Average weekly drop downs "
         />
       </div>
       <div>

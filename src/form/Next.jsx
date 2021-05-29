@@ -60,7 +60,7 @@ function Next() {
           id="custom-css-outlined-input"
         />
         <div class="row next-form">
-          <div class="col">
+          <div class="col-lg-6 col-12">
             <label for="inputEmail4" class="form-label">
               Business Name
             </label>
@@ -71,7 +71,7 @@ function Next() {
               aria-label="Business name"
             />
           </div>
-          <div class="col">
+          <div class="col-lg-6 col-12">
             <label for="inputEmail4" class="form-label">
               Business Location
             </label>
@@ -84,7 +84,7 @@ function Next() {
           </div>
         </div>
         <div class="row next-form">
-          <div class="col">
+          <div class="col-lg-6 col-12">
             <label for="inputEmail4" class="form-label">
               Applicant's Name
             </label>
@@ -95,7 +95,7 @@ function Next() {
               aria-label="Applicant's name"
             />
           </div>
-          <div class="col">
+          <div class="col-lg-6 col-12">
             <label for="inputEmail4" class="form-label">
               Applicant's Phone Number
             </label>
@@ -108,7 +108,7 @@ function Next() {
           </div>
         </div>
         <div class="row next-form">
-          <div class="col">
+          <div class="col-lg-6 col-12">
             <label for="inputEmail4" class="form-label">
               Applicant's Email Address
             </label>
@@ -119,7 +119,7 @@ function Next() {
               aria-label="Applicant's email"
             />
           </div>
-          <div class="col">
+          <div class="col-lg-6 col-12">
             <label for="inputEmail4" class="form-label">
               Applicant's Phone Number
             </label>

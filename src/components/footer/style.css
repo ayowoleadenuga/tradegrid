@@ -4,8 +4,22 @@
   color: #fff;
 }
 
+.footer-row {
+  display: flex;
+  justify-content: space-between;
+}
+
 .footer-col {
   text-align: left;
+  width: 200px;
+}
+
+.footer-first {
+  width: 360px;
+}
+
+.footer-first .hidden {
+  display: none;
 }
 
 .footer-p {
@@ -18,6 +32,7 @@
 .icon-div {
   display: flex;
 }
+
 .icon-link {
   display: flex;
   background-color: #fff;
@@ -44,6 +59,7 @@
   font-weight: 700;
   line-height: 30px;
 }
+
 .footer-lists ul {
   list-style: none;
   text-align: left;
@@ -82,11 +98,34 @@
   .footer {
     padding: 100px 50px;
   }
+
+  .footer-col {
+    text-align: left;
+    width: 150px;
+  }
+
+  .footer-first {
+    width: 300px;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .footer {
     padding: 100px 30px;
+  }
+
+  .footer-row {
+    flex-wrap: wrap;
+  }
+
+  .footer-col {
+    text-align: left;
+    width: 200px;
+    margin-bottom: 30px;
+  }
+
+  .footer-first {
+    width: 360px;
   }
 
   .footer small {
@@ -110,6 +149,7 @@
 
   .footer-flex-div {
     flex-direction: column;
+    margin-top: 0px;
     align-items: flex-start;
   }
 
@@ -118,12 +158,41 @@
   }
 }
 
+@media screen and (max-width: 550px) {
+  .footer-first .hidden {
+    display: flex;
+    margin-top: 20px;
+  }
+
+  .footer .active {
+    display: none;
+  }
+
+  .app-store img {
+    height: 40px;
+    width: 123px;
+  }
+
+  .footer-row {
+    display: flex;
+    justify-content: start;
+  }
+}
+
 @media screen and (max-width: 376px) {
   .footer {
     padding: 100px 10px;
   }
-  .footer-flex-div img {
-    width: 120px;
-    margin-bottom: 15px;
+
+  .footer-flex-div {
+    margin-top: 30px;
+  }
+
+  .footer-col {
+    width: 170px;
+  }
+
+  .footer-first {
+    width: 100%;
   }
 }

@@ -8,7 +8,7 @@ import TimelineConnector from '@material-ui/lab/TimelineConnector'
 import TimelineContent from '@material-ui/lab/TimelineContent'
 import Google from '../../assets/google.svg'
 import Apple from '../../assets/apple.svg'
-
+import HomeGroup from '../../assets/buyer-group.png'
 const useStyles = makeStyles({
   timeline: {
     marginTop:30,
@@ -37,6 +37,7 @@ function BuyerProfile() {
       <CreateProfile
         title="Create a Buyer Profile to start trading"
         className="user-profile"
+        PhoneCircle={HomeGroup}
       >
         <Timeline className={classes.timeline} >
           <TimelineItem>

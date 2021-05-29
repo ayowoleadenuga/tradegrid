@@ -83,6 +83,14 @@ section {
 }
 }
 
+@media screen and (max-width:769px){
+  .web-nav{
+    display: none;
+  }
+
+  
+}
+
 @media screen and (max-width: 376px) {
   section {
  

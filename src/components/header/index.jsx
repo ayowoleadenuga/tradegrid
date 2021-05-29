@@ -24,8 +24,8 @@ function MyNav({logo, clsName, active}) {
         <div className="bar3"></div>
       </div>
       <div
-        className="right-nav"
-        // style={{ transform: open ? 'translateX(0px)' : 'translateX(-700px)' }}
+        className={clsx("right-nav", open ? 'right-nav show-nav' : 'right-nav hide-nav')}
+        // style={{ transform: open ? 'translateY(0px)' : 'translateY(-700px)' }}
       >
         <ul className="">
           <li className="">
@@ -49,7 +49,7 @@ function MyNav({logo, clsName, active}) {
         </ul>
 
         <div className="menu-btn">
-          <MyButton text="signup to start trading" path="/signup" />
+          <MyButton text="signup to start trading" path="/signup" clsName="mobile-btn" />
         </div>
       </div>
     </nav>

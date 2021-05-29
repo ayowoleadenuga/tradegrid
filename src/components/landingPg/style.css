@@ -4,14 +4,13 @@
   padding-left: 100px;
   padding-right: 100px;
   padding-bottom: 180px;
-
 }
 
 .top-header-text {
   max-width: 505px;
   width: 100%;
   color: #fff;
-  margin-top: 50px;
+ padding-top: 50px;
   text-align: left;
 }
 
@@ -22,10 +21,12 @@
 }
 
 /* learn about us section */
+
 .learn-section .home-phone {
-  background-color: red;
-  width: inherit;
-  height: 500px;
+  width: 600px;
+  height: 100%;
+  object-fit: cover;
+  margin-top: 60px;
 }
 
 .learn-card {
@@ -66,7 +67,6 @@
   height: inherit;
   border-radius: 10px;
 }
-
 
 .launchers,
 .finances {
@@ -160,7 +160,6 @@
   background-color: goldenrod;
   justify-content: space-between;
   align-items: center;
-
 }
 
 .call-us-div {
@@ -198,14 +197,18 @@
   border-radius: 26px;
   text-align: left;
   padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .absolute-div {
   width: 364px;
 }
 
-.absolute-div img {
+.trading-absolute img {
   width: 400px;
+  height: 500px;
 }
 
 /* newsletter */
@@ -242,8 +245,7 @@
   margin: 0 10px;
 }
 
-
-@media screen and (max-width:1299px) {
+@media screen and (max-width: 1299px) {
   .top-header {
     padding-left: 50px;
     padding-right: 50px;
@@ -261,12 +263,15 @@
     max-width: 400px;
   }
 
+  .learn-section .home-phone {
+    width: 450px;
+  }
+
   .trade-flex .img {
     height: 400px;
     max-width: 450px;
     margin-bottom: 50px;
   }
-
 
   .accordion-section {
     display: flex;
@@ -295,7 +300,12 @@
     max-width: 100%;
   }
 
-  .learn-btn-div{
+  .learn-section .home-phone {
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  .learn-btn-div {
     width: 70%;
   }
 
@@ -318,6 +328,15 @@
     object-fit: cover;
     width: 100%;
     margin-top: 50px;
+  }
+
+  .trading-absolute {
+    padding: 20px;
+  }
+
+  .trading-absolute img {
+    width: 300px;
+    height: 400px;
   }
 
   .accordion-section {
@@ -357,8 +376,8 @@
   }
 
   .myform .margined-input {
- margin-top: 40px !important;
-}
+    margin-top: 40px !important;
+  }
 }
 
 @media screen and (max-width: 540px) {
@@ -376,10 +395,11 @@
     margin-top: 20px;
   }
 
-  .top-header-text a{
+  .top-header-text a {
     font-size: 14px !important;
   }
-  .learn-btn-div{
+
+  .learn-btn-div {
     width: 100%;
   }
 
@@ -395,26 +415,51 @@
 
   .trading-absolute {
     margin-top: -250px;
-    height: 403px;
-    padding: 20px;
+    height: 100%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .absolute-div {
-    max-width: 364px;
     width: 100%;
   }
 
+  .trading-absolute img {
+    margin-top: 40px;
+    width: 300px;
+    height: 400px;
+  }
+
+  .accordion {
+  padding-top: 18px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+}
+
+.accordion-title {
+  line-height: 40px;
+ 
+}
   .accordion-section {
     display: flex;
     flex-direction: column;
-    padding: 20px 0px;
+    padding: 10px 10px;
   }
+
+.fa-chevron-down {
+  line-height: 40px;
+}
 
   .help-form-row {
     margin: 50px 0px 150px 0px;
   }
 
-  .frequent-qst p{
+  .frequent-qst p {
     margin-top: 30px;
   }
 
@@ -428,14 +473,12 @@
     font-size: 20px;
   }
 
-
-  .btn-div .btn-text{
+  .btn-div .btn-text {
     margin-bottom: 30px;
   }
 }
 
 @media screen and (max-width: 376px) {
-
   h1 {
     font-size: 35px;
   }
@@ -449,12 +492,22 @@
     padding: 0px 10px 50px 10px;
   }
 
-  .absolute-div h3{
-  font-size: 24px;
-}
+  .absolute-div h3 {
+    font-size: 24px;
+  }
 
- .news-form input {
+  .news-form input {
     width: 300px;
     margin: auto;
+  }
+
+  .learn-btn-div {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+
+   .learn-section .home-phone {
+    margin-top: 70px;
   }
 }

@@ -8,6 +8,7 @@ import TimelineConnector from '@material-ui/lab/TimelineConnector'
 import TimelineContent from '@material-ui/lab/TimelineContent'
 import Google from '../../assets/google.svg'
 import Apple from '../../assets/apple.svg'
+import DashGroup from '../../assets/seller-group.png'
 const useStyles = makeStyles({
   timeline: {
     marginTop:30,
@@ -37,7 +38,9 @@ const useStyles = makeStyles({
 function SellerProfile() {
   const classes = useStyles()
   return (
-    <CreateProfile title="Create a Seller Profile to start trading">
+    <CreateProfile 
+    title="Create a Seller Profile to start trading"
+    PhoneCircle={DashGroup}>
       <Timeline className={classes.timeline}>
         <TimelineItem>
           <TimelineSeparator>

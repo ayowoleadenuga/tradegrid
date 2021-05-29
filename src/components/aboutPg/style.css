@@ -6,7 +6,7 @@
 }
 /*  */
 .about-header {
-  margin: 100px auto 0px auto;
+  padding-top: 100px  !important;
   text-align: center;
   max-width: 696px;
   width: 100%;

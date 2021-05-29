@@ -1,8 +1,7 @@
 import React from 'react'
-import PhoneCircle from '../../assets/phone-circle.png'
 
 
-function CreateProfile({ title, children}) {
+function CreateProfile({ title, children, PhoneCircle}) {
   return (
     <section className="buyer-profile-sect">
       <div className="deal-source">
@@ -10,8 +9,8 @@ function CreateProfile({ title, children}) {
           <img src={PhoneCircle} alt="" />
         </div>
         <div className="right-deal">
-          <h3>{title}</h3>
-         {children}
+          <h5 className="buyer-h5">{title}</h5>
+          {children}
         </div>
       </div>
     </section>

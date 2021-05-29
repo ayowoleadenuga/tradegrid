@@ -15,8 +15,8 @@ function MyFooter() {
         value={{ color: 'rgba(14, 31, 51, 1)', size: '0.9em' }}
       >
         <footer className="footer">
-          <div className="row ">
-            <div className="col-lg-5 col-md-4 col-sm-6 footer-col footer-first ">
+          <div className=" footer-row">
+            <div className=" footer-col footer-first ">
               <a className="navbar-brand mb-5 mt-0" href="#">
                 <img src={Logo} alt="" />
               </a>
@@ -25,11 +25,30 @@ function MyFooter() {
                   <img src={UsaFlag} alt="" /> United States
                 </div>
               </div>
-              <p className="footer-p mb-5">
+              <p className="footer-p ">
                 548 Market St, San Francisco CA 94104, USA
               </p>
+              <div className="icon-div ">
+                <a href="/" className="icon-link">
+                  <FaFacebookF />
+                </a>
+                <a href="/" className="icon-link">
+                  <FaTwitter />
+                </a>
+                <a href="#" className="icon-link">
+                  <GrInstagram />
+                </a>
+              </div>
+              <div className="app-store hidden">
+                <a href="#">
+                  <img src={Apple} alt="" className="mr-5" />
+                </a>
+                <a href="#">
+                  <img src={Google} alt="" className="mr-5" />
+                </a>
+              </div>
             </div>
-            <div className="col footer-col footer-lists ">
+            <div className="footer-col footer-lists ">
               <h4>Company</h4>
               <ul>
                 <li>
@@ -40,7 +59,7 @@ function MyFooter() {
                 </li>
               </ul>
             </div>
-            <div className="col footer-col footer-lists ">
+            <div className="footer-col footer-lists ">
               <h4>Services</h4>
               <ul>
                 <li>
@@ -51,7 +70,7 @@ function MyFooter() {
                 </li>
               </ul>
             </div>
-            <div className="col footer-col footer-lists ">
+            <div className=" footer-col footer-lists ">
               <h4>Help</h4>
               <ul>
                 <li>
@@ -69,20 +88,10 @@ function MyFooter() {
               </ul>
             </div>
           </div>
-          <div className="icon-div mb-5">
-            <a href="/" className="icon-link">
-              <FaFacebookF />
-            </a>
-            <a href="/" className="icon-link">
-              <FaTwitter />
-            </a>
-            <a href="#" className="icon-link">
-              <GrInstagram />
-            </a>
-          </div>
+
           <div className="footer-flex-div">
             <small>Copyright © 2019 TradeGrid, LLC.</small>
-            <div className="app-store">
+            <div className="app-store active">
               <a href="#">
                 <img src={Apple} alt="" className="mr-5" />
               </a>

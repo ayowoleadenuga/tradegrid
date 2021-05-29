@@ -8,22 +8,24 @@ import HelpFormSection from './HelpForm'
 import StartTrading from '../StartTrading'
 import Newsletter from './Newsletter'
 import MyFooter from '../footer'
-import TestAccord from './TestAccord'
-import TestedAcc from './TestedAcc'
+import MyNav from '../header'
+import Logo from '../../assets/tradeLogo.svg'
 
 function LandingPage() {
     return (
-        <div>
-            <TopHeader/>
-            <LearnSection/>
-            <TradeSection/>
-            <AccordionSect/>
-            <HelpFormSection/>
-            <StartTrading/>
-            <Newsletter/>
-            <MyFooter/>
-     
+      <div>
+        <div className="mobile-nav">
+          <MyNav logo={Logo} />
         </div>
+        <TopHeader />
+        <LearnSection />
+        <TradeSection />
+        <AccordionSect />
+        <HelpFormSection />
+        <StartTrading />
+        <Newsletter />
+        <MyFooter />
+      </div>
     )
 }
 

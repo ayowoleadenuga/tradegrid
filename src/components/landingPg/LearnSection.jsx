@@ -5,11 +5,8 @@ import HomePhone from '../../assets/home-phone.png'
 function LearnSection() {
   return (
     <section className=" trade-flex learn-section">
-      <div className="img">
-        <img src={HomePhone} alt="" className="home-phone" />
-      </div>
-
-      <div className="learn-card border-0">
+      <img src={HomePhone} alt="" className="home-phone" />
+      <div className="learn-card ">
         <h5 className="card-title">TradeGrid Ninja has Arrived!</h5>
         <p className="card-subtitle mb-2 mt-4">
           Experience our all-new mobile platform. Buy or Sell on the Go -
@@ -25,15 +22,8 @@ function LearnSection() {
           mission-critical businesses who insist on having the best or nothing!
         </p>
         <div className="btn-div learn-btn-div">
-          <MyButton
-            path="/buyer"
-            text="Learn more as a buyer"
-          />
-          <MyButton
-           
-            path="/seller"
-            text="Learn more as a seller"
-          />
+          <MyButton path="/buyer" text="Learn more as a buyer" />
+          <MyButton path="/seller" text="Learn more as a seller" />
         </div>
       </div>
     </section>

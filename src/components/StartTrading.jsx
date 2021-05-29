@@ -1,6 +1,6 @@
 import React from 'react'
 import MyButton from './button'
-import DoublePhone from '../assets/double-phones.png'
+import DoublePhone from '../assets/double-phone.png'
 function StartTrading() {
     return (
       <section className="trading-sect ">
@@ -16,9 +16,9 @@ function StartTrading() {
               path="/signup"
               text="Sign up to start trading"
             />
-           <div className="img">
-
-           </div>
+          </div>
+          <div className="img">
+            <img src={DoublePhone} alt="" />
           </div>
         </div>
       </section>

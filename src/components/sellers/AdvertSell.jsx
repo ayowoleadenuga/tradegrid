@@ -5,7 +5,7 @@ function AdvertSell() {
     <section className="deal-source">
       {/* left-div */}
       <div className="left-deal">
-        <h5>What the TradeGrid app will do for you</h5>
+        <h5 className="buyer-h5">What the TradeGrid app will do for you</h5>
         <p>
           TG Finance™ provides financial support products such as Secure escrow
           payment services, Trade loans, Supply Chain Financing.
@@ -38,7 +38,7 @@ function AdvertSell() {
       </div>
       {/* right div */}
       <div className="right-deal ">
-        <h5>What the TradeGrid app will cost you</h5>
+        <h5 className="buyer-h5">What the TradeGrid app will cost you</h5>
         <p className="nothing-text">Next to Nothing!</p>
         <p>
           Our goal is to maximize market opportunities for our partners in an
