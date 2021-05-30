@@ -42,14 +42,14 @@ function MyNav({logo, clsName, active}) {
           </li>
 
           <li className="">
-            <Link to="/" className={clsx('nav-link ', clsName)}>
+            <Link to="#faq" className={clsx('nav-link ', clsName)}>
               FAQ
             </Link>
           </li>
         </ul>
 
         <div className="menu-btn">
-          <MyButton text="signup to start trading" path="/signup" clsName="mobile-btn" />
+          <MyButton text="Signup to start trading" path="/signup" clsName="mobile-btn" />
         </div>
       </div>
     </nav>

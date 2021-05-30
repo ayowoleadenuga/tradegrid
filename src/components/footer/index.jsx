@@ -63,10 +63,10 @@ function MyFooter() {
               <h4>Services</h4>
               <ul>
                 <li>
-                  <Link to="/buyers">Corporate Buyer</Link>
+                  <Link to="/buyer">Corporate Buyer</Link>
                 </li>
                 <li>
-                  <Link to="/sellers">Corporate Seller</Link>
+                  <Link to="/seller">Corporate Seller</Link>
                 </li>
               </ul>
             </div>
@@ -74,7 +74,7 @@ function MyFooter() {
               <h4>Help</h4>
               <ul>
                 <li>
-                  <Link to="/">FAQ</Link>
+                  <Link to="#faq">FAQ</Link>
                 </li>
                 <li>
                   <Link to="/">Privacy Policy</Link>
