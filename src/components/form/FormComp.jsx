@@ -1,9 +1,9 @@
 import React from 'react'
 import './style.css'
-import Logo from '../assets/TradeGridlogo.svg'
-import Small from '../assets/small.svg'
-import Medium from '../assets/medium.svg'
-import Large from '../assets/large.svg'
+import Logo from '../../assets/TradeGridlogo.svg'
+import Small from '../../assets/small.svg'
+import Medium from '../../assets/medium.svg'
+import Large from '../../assets/large.svg'
 import {Link} from 'react-router-dom'
 
 function FormComp({clsName, children}) {

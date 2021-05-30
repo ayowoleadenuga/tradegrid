@@ -134,8 +134,17 @@ margin:80px auto 0px auto;
   box-shadow: 5px 30px 56.12757110595703px 0px rgba(55, 55, 55, 0.11);
   border-radius: 20px;
   padding: 50px 40px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
+.form-div input, .MuiSelect-selectMenu{
+  width:450px !important;
+}
+
+.MuiSelect-outlined.MuiSelect-outlined {
+    padding-right: 15px !important;
+}
  .left-btn{
   display: flex;
  justify-content: flex-end;
@@ -147,6 +156,14 @@ margin:80px auto 0px auto;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+}
+
+.form-div{
+  padding: 50px 20px;
+}
+
+.form-div input, .MuiSelect-selectMenu{
+  width:400px !important;
 }
 
 .benefit-img-div{
@@ -176,4 +193,31 @@ margin:80px auto 0px auto;
   background-color: #f9f9f9;
 }
 
+}
+
+@media screen and (max-width:769px){
+  .form-div{
+  padding: 50px 20px;
+}
+
+.form-div input, .MuiSelect-selectMenu{
+  width:600px !important;
+}
+
+}
+@media screen and (max-width:550px){
+  .form-div{
+  padding: 50px 20px;
+}
+
+
+.form-div input, .MuiSelect-selectMenu{
+  max-width:100% !important;
+}
+}
+
+@media screen and (max-width:376px){
+  .form-div{
+  padding: 50px 10px;
+}
 }

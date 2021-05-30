@@ -1,4 +1,4 @@
-import React, {useRef, useState} from 'react'
+import React, { useState} from 'react'
 import MyButton from '../button'
 import {Link} from 'react-router-dom'
 
@@ -7,7 +7,6 @@ import clsx from 'clsx'
 
 function MyNav({logo, clsName, active}) {
     const [open, setOpen] = useState(false)
-  const myNav = useRef(null)
     const navToggler = () => {
       setOpen(!open)
 
@@ -27,8 +26,8 @@ function MyNav({logo, clsName, active}) {
         className={clsx("right-nav", open ? 'right-nav show-nav' : 'right-nav hide-nav')}
         // style={{ transform: open ? 'translateY(0px)' : 'translateY(-700px)' }}
       >
-        <ul className="">
-          <li className="">
+        <ul>
+          <li>
             <Link
               to="/about"
               className={clsx(

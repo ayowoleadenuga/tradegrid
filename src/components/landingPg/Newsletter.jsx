@@ -1,6 +1,6 @@
 import React from 'react'
 import NewsTank from '../../assets/newsletter.png'
-import MyButton from '../button'
+
 
 const sectionStyle = {
   backgroundImage: `linear-gradient(to bottom, rgba(14, 31, 51, 0.7),
