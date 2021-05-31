@@ -209,6 +209,7 @@
 .trading-absolute img {
   width: 400px;
   height: 500px;
+  object-fit: cover;
 }
 
 /* newsletter */
@@ -379,6 +380,13 @@
     margin-top: 40px !important;
   }
 }
+
+/* @media screen and (max-width:600px){
+  .trade-flex .img img {
+  object-fit: contain;
+  background-color: green;
+}
+} */
 
 @media screen and (max-width: 540px) {
   h1 {

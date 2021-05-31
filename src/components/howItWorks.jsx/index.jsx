@@ -11,9 +11,7 @@ import WorkCard from './WorkCard'
 function HowItWorks() {
   return (
     <div>
-      <div className="mobile-nav">
-        <MyNav logo={Logo}  />
-      </div>
+      
       <TopWork />
       <WelcomeNote />
       <WorkCard />

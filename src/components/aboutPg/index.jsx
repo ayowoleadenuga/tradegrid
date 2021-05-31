@@ -9,9 +9,7 @@ import Logo from '../../assets/tradeLogo.svg'
 function AboutPage() {
   return (
     <div>
-      <div className="mobile-nav">
-        <MyNav logo={Logo}  />
-      </div>
+     
       <AboutHeader />
       <OurProduct />
       <StartTrading />

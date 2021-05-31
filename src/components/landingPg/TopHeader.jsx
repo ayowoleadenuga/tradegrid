@@ -9,11 +9,11 @@ import './style.css'
 
 const sectionStyle = {
   // backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6) ), url(${PetrolTank})`,
-  backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6) ), url(${BgVideo})`,
+  backgroundImage: ` linear-gradient(rgb(14 31 51 / 61%), rgb(14 31 51 / 61%) ), url(${BgVideo})`,
   backgroundRepeat: 'no-repeat',
-  backgroundSize: '100vw 100%',
+  backgroundSize: 'cover',
   backgroundPosition: 'center',
-  height: '100vh'
+  // height: '100vh'
 }
 
 function TopHeader() {

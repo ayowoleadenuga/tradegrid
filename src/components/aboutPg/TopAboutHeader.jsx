@@ -7,7 +7,7 @@ import './style.css'
 const sectionStyle = {
   backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6) ), url(${Driller})`,
   backgroundRepeat: 'no-repeat',
-  backgroundSize: '100vw 100vh',
+  backgroundSize: 'cover',
   backgroundPosition: 'center',
 }
 
@@ -17,7 +17,9 @@ function AboutHeader() {
       <div className="web-nav">
         <MyNav logo={Logo} active="/active" />
       </div>
-
+      <div className="mobile-nav">
+        <MyNav logo={Logo} />
+      </div>
       <div className="about-header  container">
         <h1>About Us</h1>
         <p className="white-p">
