@@ -54,13 +54,13 @@ function HelpFormSection() {
       <form noValidate autoComplete="off" className="myform">
         <div className={classes.root}>
           <CssTextField
-            label="Your name"
+            label="Your Name"
             variant="outlined"
             id="customoutlined-input"
           />
           <CssTextField
             className="margined-input"
-            label="Your email"
+            label="Your E-mail"
             variant="outlined"
             id="custom-css-outlined-input"
           />

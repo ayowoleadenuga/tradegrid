@@ -87,10 +87,10 @@ function BuyerProfile() {
           </TimelineItem>
         </Timeline>
         <div className="app-store">
-          <a href="/">
+          <a href="/signup">
             <img src={Apple} alt="" className="mr-5" />
           </a>
-          <a href="/">
+          <a href="/signup">
             <img src={Google} alt="" className="mr-5" />
           </a>
         </div>

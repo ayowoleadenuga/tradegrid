@@ -39,16 +39,23 @@
 
 .benefit-img-div {
   position: relative;
+  max-width: 350px;
+  width: 100%;
+}
+
+.benefit-img-div img{
+  width: 100%;
 }
 
 .img-content-div {
   text-align: center;
   position: absolute;
   height: 184px;
-  width: 325px;
+  width: 300px;
   padding: 25px 15px;
   z-index: 3;
   left: 50%;
+  right: 50%;
   transform: translateX(-50%);
   top: 85%;
   border-radius: 5px;
@@ -154,7 +161,7 @@ margin:80px auto 0px auto;
   .benefit-div {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
 }
 
@@ -166,33 +173,27 @@ margin:80px auto 0px auto;
   width:400px !important;
 }
 
-.benefit-img-div{
-  margin-bottom: 180px;
+.benefit-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.benefit-img-div:nth-of-type(3){
-  margin-bottom: 0px;
-}
-
-.benefit-img-div img{
-  width: 350px;
-  margin-right: 40px;
+.benefit-img-div {
+  position: relative;
+  max-width: 290px;
+  /* width: 100%; */
 }
 
 .img-content-div {
-  text-align: center;
-  position: absolute;
   height: 154px;
-  width: 315px;
-  padding: 25px 15px;
-  z-index: 3;
-  left: 45%;
-  transform: translateX(-50%);
-  top: 85%;
-  border-radius: 5px;
-  background-color: #f9f9f9;
+  width: 280px;
+  padding: 15px 15px;
 }
 
+.img-content-div p{
+   font-size: 14px !important;
+}
 }
 
 @media screen and (max-width:769px){
@@ -202,6 +203,17 @@ margin:80px auto 0px auto;
 
 .form-div input, .MuiSelect-selectMenu{
   width:600px !important;
+}
+
+.benefit-img-div {
+  position: relative;
+  max-width: 300px;
+  /* width: 100%; */
+}
+
+.benefit-img-div:nth-of-type(3){
+  margin: 150px auto 0px auto;
+
 }
 
 }
@@ -214,10 +226,41 @@ margin:80px auto 0px auto;
 .form-div input, .MuiSelect-selectMenu{
   max-width:100% !important;
 }
+
+.benefit-img-div {
+  position: relative;
+  /* width: 100%; */
 }
+
+.benefit-img-div:nth-of-type(3){
+  margin: 0px auto;
+
+}
+
+.benefit-img-div{
+  margin: 0px auto 150px auto;
+}
+
+
+.img-content-div{
+  width: 80%;
+}
+}
+
 
 @media screen and (max-width:376px){
   .form-div{
   padding: 50px 10px;
+}
+
+.work-cards .mycard {
+  margin: 14px;
+
+  padding: 10px;
+ 
+}
+  .work-cards .mycard > span{
+  height: 60px;
+width: 60px;
 }
 }

@@ -20,7 +20,7 @@ function TopHeader() {
   return (
     <div className="top-header" style={sectionStyle}>
       <div className="web-nav">
-        <MyNav logo={Logo}  />
+        <MyNav logo={Logo} />
       </div>
       <div className="mobile-nav">
           <MyNav logo={Logo} />
