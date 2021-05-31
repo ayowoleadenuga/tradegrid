@@ -29,16 +29,16 @@ function MyFooter() {
                 <small className="tiny">548 Market St, San Francisco CA 94104, USA</small>
               </p>
               <div className="icon-div ">
-                <a href="https://www.facebook.com" className="icon-link" target="_blank">
+                <a href="https://www.facebook.com" className="icon-link" rel="noreferrer" target="_blank">
                   <FaFacebookF />
                 </a>
-                <a href="https://www.twitter.com" className="icon-link" target="_blank">
+                <a href="https://www.twitter.com" className="icon-link" rel="noreferrer" target="_blank">
                   <FaTwitter />
                 </a>
-                <a href="https://www.instagram.com" className="icon-link" target="_blank">
+                <a href="https://www.instagram.com" className="icon-link" rel="noreferrer" target="_blank">
                   <GrInstagram />
                 </a>
-                <a href="https://www.linkedin.com/company/tradegrid/" className="icon-link" target="_blank">
+                <a href="https://www.linkedin.com/company/tradegrid/" rel="noreferrer" className="icon-link" target="_blank">
                   <GrLinkedin />
                 </a>
               </div>

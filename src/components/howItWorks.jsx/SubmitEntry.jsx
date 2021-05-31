@@ -49,9 +49,9 @@ function SubmitEntry() {
   const [meansOfHearing, setMeansOfHearing] = React.useState('')
   const [value, setValue] = React.useState('Controlled')
 
-  const handleChange = (event) => {
-    setValue(event.target.value)
-  }
+  // const handleChange = (event) => {
+  //   setValue(event.target.value)
+  // }
 
   const handleGender = (event) => {
     setGender(event.target.value)
@@ -78,8 +78,8 @@ function SubmitEntry() {
           <CssTextField
             className={classes.margin}
             label="First name"
-            // value={value}
-            // onChange={handleChange}
+            value={value}
+            onChange={(e)=>setValue(e.target.value)}
             variant="outlined"
             id="customoutlined-input"
           />
