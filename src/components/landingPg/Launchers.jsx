@@ -18,7 +18,7 @@ function CardLaunchers() {
         </div>
       </div>
       <div className="img">
-        <img src={Student} alt="" />
+        <img src={Student} alt="" sizes="(min-width: 500px) 8%, 13.33%" />
       </div>
     </div>
   )

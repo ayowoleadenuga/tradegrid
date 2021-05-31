@@ -29,6 +29,8 @@
 .benefit {
   margin-top: 100px;
   margin-bottom: 150px;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .benefit-div {

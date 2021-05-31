@@ -1,5 +1,5 @@
 import React from 'react'
-import Driller from '../../assets/driller.jpg'
+import Driller from '../../assets/driller2.jpeg'
 import MyNav from '../header'
 import Logo from '../../assets/TradeGridlogo.svg'
 import './style.css'
