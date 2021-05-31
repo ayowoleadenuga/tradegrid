@@ -18,15 +18,29 @@ function MyNav({logo, clsName, clsBar, active}) {
       </Link>
       {/* toggle button */}
       <div className={open ? 'change' : 'iconbar'} onClick={navToggler}>
-        <div className={clsx("bar1", clsBar)}></div>
-        <div className={clsx("bar2", clsBar)}></div>
-        <div className={clsx("bar3", clsBar)}></div>
+        <div className={clsx('bar1', clsBar)}></div>
+        <div className={clsx('bar2', clsBar)}></div>
+        <div className={clsx('bar3', clsBar)}></div>
       </div>
       <div
-        className={clsx("right-nav", open ? 'right-nav show-nav' : 'right-nav hide-nav')}
+        className={clsx(
+          'right-nav',
+          open ? 'right-nav show-nav' : 'right-nav hide-nav'
+        )}
         // style={{ transform: open ? 'translateY(0px)' : 'translateY(-700px)' }}
       >
         <ul>
+          <li>
+            <Link
+              to="/"
+              className={clsx(
+                'nav-link ',
+                clsName
+              )}
+            >
+              Home
+            </Link>
+          </li>
           <li>
             <Link
               to="/about"
@@ -48,7 +62,11 @@ function MyNav({logo, clsName, clsBar, active}) {
         </ul>
 
         <div className="menu-btn">
-          <MyButton text="Signup to start trading" path="/signup" clsName="mobile-btn" />
+          <MyButton
+            text="Signup to start trading"
+            path="/signup"
+            clsName="mobile-btn"
+          />
         </div>
       </div>
     </nav>

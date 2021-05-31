@@ -43,10 +43,10 @@ function MyFooter() {
                 </a>
               </div>
               <div className="app-store hidden">
-                <a href="/">
+                <a href="/signup">
                   <img src={Apple} alt="" className="mr-5" />
                 </a>
-                <a href="/">
+                <a href="/signup">
                   <img src={Google} alt="" className="mr-5" />
                 </a>
               </div>

@@ -209,6 +209,7 @@
 .trading-absolute img {
   width: 400px;
   height: 500px;
+  object-fit: cover;
 }
 
 /* newsletter */
@@ -380,6 +381,13 @@
   }
 }
 
+/* @media screen and (max-width:600px){
+  .trade-flex .img img {
+  object-fit: contain;
+  background-color: green;
+}
+} */
+
 @media screen and (max-width: 540px) {
   h1 {
     font-size: 40px;
@@ -478,6 +486,13 @@
   }
 }
 
+@media screen and (max-width:415px){
+  .top-header {
+    margin: 0;
+    padding: 0px 15px 50px 15px;
+  }
+}
+
 @media screen and (max-width: 376px) {
   h1 {
     font-size: 35px;
@@ -487,10 +502,7 @@
     font-size: 16px;
   }
 
-  .top-header {
-    margin: 0;
-    padding: 0px 10px 50px 10px;
-  }
+  
 
   .absolute-div h3 {
     font-size: 24px;

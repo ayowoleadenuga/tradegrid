@@ -87,13 +87,10 @@ section {
   .web-nav{
     display: none;
   }
-
-  
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 415px){
   section {
- 
 padding: 100px 15px;
 }
 }
