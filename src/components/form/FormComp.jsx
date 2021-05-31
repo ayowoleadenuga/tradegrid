@@ -14,8 +14,9 @@ function FormComp({clsName, children}) {
           <img src={Large} alt="" className="large" />
           <img src={Medium} alt="" className="medium" />
           <div className="my-absolute">
-            <Link to="/" className="navbar-brand">
+            <Link to="/" className="navbar-brand form-nav">
               <img src={Logo} alt="" />
+              <span><small>&#8592; Back to Home</small></span>
             </Link>
 
             <h3>Welcome</h3>
@@ -30,7 +31,7 @@ function FormComp({clsName, children}) {
             </p>
             <p>
               We are excited to meet with leading petroleum products marketers
-              in the region.
+              across the globe.
             </p>
             <p>Kindly fill in the details and our team will be in touch.</p>
           </div>

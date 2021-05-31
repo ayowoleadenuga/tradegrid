@@ -46,7 +46,7 @@ function SubmitEntry() {
   const [gender, setGender] = React.useState('')
   const [language, setLanguage] = React.useState('')
   const [degree, setDegree] = React.useState('')
-
+  const [meansOfHearing, setMeansOfHearing] = React.useState('')
   const [value, setValue] = React.useState('Controlled')
 
   const handleChange = (event) => {
@@ -78,8 +78,8 @@ function SubmitEntry() {
           <CssTextField
             className={classes.margin}
             label="First name"
-            value={value}
-            onChange={handleChange}
+            // value={value}
+            // onChange={handleChange}
             variant="outlined"
             id="customoutlined-input"
           />
@@ -149,6 +149,22 @@ function SubmitEntry() {
             variant="outlined"
             id="custom-css-outlined-input"
           />
+          <CssTextField
+            className={classes.margin}
+            label="Where did you hear about us"
+            id="demo-simple-select"
+            variant="outlined"
+            value={meansOfHearing}
+            select
+            onChange={setMeansOfHearing}
+          >
+            <MenuItem value={1}>Campus Outreach</MenuItem>
+            <MenuItem value={2}>Social Media</MenuItem>
+            <MenuItem value={2}>Word of Mouth</MenuItem>
+            <MenuItem value={2}>Fliers and HandBill</MenuItem>
+            <MenuItem value={2}>Website</MenuItem>
+            <MenuItem value={2}>Others</MenuItem>
+          </CssTextField>
         </div>
         <div className="left-btn">
           <Link to="/submit" className="padded-btn mybtn">

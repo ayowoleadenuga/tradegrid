@@ -5,11 +5,7 @@ function AdvertSell() {
     <section className="deal-source">
       {/* left-div */}
       <div className="left-deal">
-        <h5 className="buyer-h5">What the TradeGrid app will do for you</h5>
-        <p>
-          TG Finance™ provides financial support products such as Secure escrow
-          payment services, Trade loans, Supply Chain Financing.
-        </p>
+        <h5 className="buyer-h5">What the TradeGrid platform will do for you</h5>
         <p>
           <strong>
             As a TradeGrid verified Seller, you’re guaranteed uninterrupted
@@ -38,21 +34,21 @@ function AdvertSell() {
       </div>
       {/* right div */}
       <div className="right-deal ">
-        <h5 className="buyer-h5">What the TradeGrid app will cost you</h5>
+        <h5 className="buyer-h5">What the TradeGrid platform will cost you</h5>
         <p className="nothing-text">Next to Nothing!</p>
         <p>
           Our goal is to maximize market opportunities for our partners in an
           extremely cost effective manner, hence we charge zero sign up fees,
-          zero platform fees and a transparent transfer charge of 0.5% (may
-          vary) on transactions sourced or settled through the app. ‍
+          zero platform fees and a transparent Escrow charge of 0.2% (may
+          vary) on transactions sourced or settled through the platform. ‍
         </p>
         <p>
           <strong>
             {' '}
             Next to Nothing. Historically, TradeGrid verified Sellers report
-            higher margins
-          </strong>
-          on transactions sourced from the platform, mostly due to the demand
+            higher margins 
+          </strong> {' '}
+           on transactions sourced from the platform, mostly due to the demand
           pooling we provide, but also because TradeGrid connects you directly
           to the procurer’s desk.
         </p>

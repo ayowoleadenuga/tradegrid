@@ -17,10 +17,10 @@ function Newsletter() {
      
         <h3>Subscribe to our Newsletter!</h3>
         <p>
-          Stay up-to-date with announcements, news & updates, discounts and much
+          Stay up-to-date with announcements, news & updates, discount deals and much
           more.
         </p>
-        <form className=" news-form">
+        <form className="news-form">
           <div className="input-div">
             <input
               type="email"
@@ -30,7 +30,7 @@ function Newsletter() {
             />
           </div>
           <div>
-            <button className="mybtn padded-btn">subscribe</button>
+            <button className="mybtn padded-btn">Subscribe</button>
           </div>
         </form>
       

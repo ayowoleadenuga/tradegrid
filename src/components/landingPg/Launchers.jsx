@@ -7,8 +7,7 @@ function CardLaunchers() {
       <div className="learn-card border-0">
         <h5 className="card-title">TradeGrid City Launchers</h5>
         <p className="card-subtitle mb-2 mt-4">
-          Discover how we’re powering more cities with Energy for today and the
-          future.
+         Discover how we're partnering with host communities to power more cities with Energy for Today and the Future
         </p>
         <div className="btn-div">
           <MyButton

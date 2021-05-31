@@ -3,10 +3,11 @@ import MyNav from '../header'
 import Logo from '../../assets/tradeLogo.svg'
 import './style.css'
 import MyButton from '../button'
-function TopBuyer({src, buyers}) {
+
+function TopBuyer({src, buyers, action}) {
     return (
       <div className="top-header buyer-sect">
-        <MyNav logo={Logo} clsName="dark-link" />
+        <MyNav logo={Logo} clsName="dark-link" clsBar="darkBar" />
         <div className="deal-source">
           {/* left-div */}
           <div className="left-deal buyer-seller">
@@ -19,15 +20,15 @@ function TopBuyer({src, buyers}) {
             <p>
               In each of these countries, we partner with more than 80% of the
               leading product marketers, refineries and mid-stream players, to
-              deliver exceptional buying experiences through our digital
+              deliver exceptional {action} experiences through our digital
               platform.
             </p>
             <p>
-              Our global and regional teams are formed from world-class
+              Our global and regional teams are comprised of world-class
               professionals, some of whom are top-tier strategy consultants, O&G
-              experts, and supply chain managers, who collectively strive to
+              experts, and supply chain managers, who are collectively striving to
               build additional efficiencies to the platform, with an ultimate
-              aim of enhancing the TradeGrid Buyer benefits and experience.
+              aim of enhancing the TradeGrid {buyers} benefits and experience.
             </p>
             <MyButton path="" text="Download the app" />
           </div>

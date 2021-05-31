@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom'
 import './style.css'
 import clsx from 'clsx'
 
-function MyNav({logo, clsName, active}) {
+function MyNav({logo, clsName, clsBar, active}) {
     const [open, setOpen] = useState(false)
     const navToggler = () => {
       setOpen(!open)
@@ -18,9 +18,9 @@ function MyNav({logo, clsName, active}) {
       </Link>
       {/* toggle button */}
       <div className={open ? 'change' : 'iconbar'} onClick={navToggler}>
-        <div className="bar1"></div>
-        <div className="bar2"></div>
-        <div className="bar3"></div>
+        <div className={clsx("bar1", clsBar)}></div>
+        <div className={clsx("bar2", clsBar)}></div>
+        <div className={clsx("bar3", clsBar)}></div>
       </div>
       <div
         className={clsx("right-nav", open ? 'right-nav show-nav' : 'right-nav hide-nav')}

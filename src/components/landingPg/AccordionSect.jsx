@@ -26,7 +26,7 @@ function AccordionSect() {
     {
       title: 'What guarantee can I expect from TradeGrid?',
       content:
-        'We partner with verified suppliers in your region to provide you quality products at the very best price. We guarantee that all products are authentic and delivered in perfect condition',
+        "We partner with verified suppliers in your region to provide you quality products at the very best price. We verify that products are delivered in satisfactory condition before buyers' funds are released",
     },
     {
       title:
@@ -37,7 +37,7 @@ function AccordionSect() {
     {
       title: 'Do I need to get verified before I begin to sell?',
       content:
-        'Yes, you need to get verified to make transactions in themarketplace, this is to ensure a safe and secure trading environment for all parties. Once verified, you can now begin to ‘Request Quotes’ from Sellers and ‘Respond to Tender Invitations’ from Buyers. Our verification process is simple and only takes a couple of minutes.',
+        'Yes, you need to get verified to make transactions in the marketplace, this is to ensure a safe and secure trading environment for all parties. Our verification process is simple and only takes a couple of minutes.',
     },
     {
       title: 'What payment methods do you accept?',
@@ -45,9 +45,9 @@ function AccordionSect() {
     },
   ]
     return (
-      <section className="accordion-sect" >
+      <section className="accordion-sect" id="faq">
         <div className="frequent-qst text-center">
-          <h3 id="faq">Frequently Asked Questions</h3>
+          <h3>Frequently Asked Questions</h3>
           <p>Below are questions we've been asked the most about Tradegrid.</p>
         </div>
         {accordionData.map((data, index) => (

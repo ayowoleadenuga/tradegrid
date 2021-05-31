@@ -4,6 +4,11 @@
   align-items: flex-start;
   height: 100%;
 }
+.form-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 
 .form-sect .small,
 .form-sect .large,

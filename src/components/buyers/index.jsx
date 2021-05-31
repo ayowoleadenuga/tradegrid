@@ -9,7 +9,7 @@ import BuyerProfile from './BuyerProfile'
 function BuyerPage() {
     return (
         <div>
-            <TopBuyer src={Home} buyers="Buyers"/>
+            <TopBuyer src={Home} buyers="Buyers" action="buying" />
             <AdvertBuy/>
             <BuyerProfile/>
             <MyFooter/>

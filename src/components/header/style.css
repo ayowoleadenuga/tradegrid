@@ -35,7 +35,7 @@
   margin-top: 0px !important;
 }
 .navbar-brand img {
-  width: 150px;
+  width: 130px;
 }
 
 .iconbar {
@@ -49,9 +49,12 @@
   width: 30px;
   height: 4px;
   background: 
-#190D2D;
+#fff;
   margin: 6px 0;
   transition: 0.4s;
+}
+.darkBar {
+  background: #190D2D !important;
 }
 
 .bar2 {
@@ -82,8 +85,8 @@
 }
   .mobile-nav {
     display: block;
-    background-color: #fff;
-    padding: 0 30px;
+    /* background-color: #fff; */
+    /* padding: 0 30px; */
   }
   .iconbar {
     cursor: pointer;
@@ -145,6 +148,6 @@
 
 @media screen and (max-width:380px){
     .mobile-nav {
-    padding: 0 10px;
+    /* padding: 0 10px; */
   }
 }

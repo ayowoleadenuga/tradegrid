@@ -74,7 +74,7 @@ function SellerProfile() {
               <h6>Set Up</h6>
               <small>
                 Signup, verify your account and go to your profile to set up
-                Seller parameters like your Coverage region, Product types and
+                Seller parameters such as your Coverage region, Product types and
                 Current prices.
               </small>
             </div>

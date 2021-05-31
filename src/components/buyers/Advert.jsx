@@ -5,18 +5,14 @@ function AdvertBuy() {
     <section className="deal-source buyer-advert">
       {/* left-div */}
       <div className="left-deal">
-        <h5 className="buyer-h5">What the TradeGrid app will do for you</h5>
-        <p>
-          TG Finance™ provides financial support products such as Secure escrow
-          payment services, Trade loans, Supply Chain Financing.
-        </p>
+        <h5 className="buyer-h5">What the TradeGrid platform will do for you</h5>
         <p>
           <strong>
             As a TradeGrid verified Buyer, you’re guaranteed uninterrupted
             product availability,
           </strong>{' '}
           at the very best price, all the time. We achieve this for you by
-          partnering withverified suppliers in your region to enable you:
+          partnering with verified suppliers in your region to enable you:
         </p>
         <ol className="ordered-list">
           <li>Request instant quotes.</li>
@@ -29,7 +25,7 @@ function AdvertBuy() {
         <p>
           <strong>
             When you buy through the platform, our partners are offering you the
-            lowest possible price from their depos/stores.
+            lowest possible price from their depots/stores.
           </strong>{' '}
           This is because we’ve equipped our partners with a GPS route mapping,
           demand aggregation and supply chain optimization tool, that leverages
@@ -38,7 +34,7 @@ function AdvertBuy() {
       </div>
       {/* right div */}
       <div className="right-deal ">
-        <h5 className="buyer-h5">What the TradeGrid app will cost you</h5>
+        <h5 className="buyer-h5">What the TradeGrid platform will cost you</h5>
         <p className="nothing-text">Nothing!</p>
         <p>
           Our goal is to provide the lowest-cost and highest-credibility

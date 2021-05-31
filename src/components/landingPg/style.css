@@ -30,7 +30,7 @@
 }
 
 .learn-card {
-  max-width: 500px;
+  max-width: 530px;
   width: 100%;
   text-align: left;
 }
@@ -55,7 +55,7 @@
 
 .trade-flex .img {
   height: 450px;
-  max-width: 570px;
+  max-width: 550px;
   width: 100%;
   position: relative;
   margin-bottom: 50px;

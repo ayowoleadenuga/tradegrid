@@ -8,7 +8,7 @@ import SellerProfile from './SellerProfile'
 function SellerPage() {
   return (
     <div>
-      <TopBuyer src={Dash} buyers="Sellers" />
+      <TopBuyer src={Dash} buyers="Sellers" action="trading" />
       <AdvertSell/>
       <SellerProfile/>
       <MyFooter />

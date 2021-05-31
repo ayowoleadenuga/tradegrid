@@ -6,10 +6,9 @@ function StartTrading() {
       <section className="trading-sect ">
         <div className="trading-absolute">
           <div className="absolute-div">
-            <h3>Ready to start Trading?</h3>
+            <h3>Ready to Start Trading?</h3>
             <p>
-              Kindly click the button below to fill the form and our team will
-              be in touch.
+            Click on the button below to fill an Access Request Form and our team would be in touch.
             </p>
             <MyButton
               className="btn-text"

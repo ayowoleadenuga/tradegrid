@@ -22,14 +22,17 @@ function TopHeader() {
       <div className="web-nav">
         <MyNav logo={Logo}  />
       </div>
+      <div className="mobile-nav">
+          <MyNav logo={Logo} />
+        </div>
       <div className="top-header-text">
         <h1>Earth’s Oil & Gas Marketplace</h1>
         <p className="white-p">
-          Connect to over 50,000 Suppliers and Off-takers; access the best deals
-          in a click.
+          Connect to over 50,000 Suppliers and Off-takers; 
+          <p className="white-p">access the best deals in a click.</p>
         </p>
         <MyButton text="Sign up to start trading" path="/signup" />
-        <Link to="/">
+        <Link to="/about">
           Learn more about the TradeGrid® platform and products.
         </Link>
       </div>

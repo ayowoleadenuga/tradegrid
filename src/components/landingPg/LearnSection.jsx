@@ -7,7 +7,7 @@ function LearnSection() {
     <section className=" trade-flex learn-section">
       <img src={HomePhone} alt="" className="home-phone" />
       <div className="learn-card ">
-        <h5 className="card-title">TradeGrid Ninja has Arrived!</h5>
+        <h5 className="card-title">TradeGrid-Ninja&#8482; has Arrived!</h5>
         <p className="card-subtitle mb-2 mt-4">
           Experience our all-new mobile platform. Buy or Sell on the Go -
           <strong>Faster</strong>, <strong>Safer</strong> and{' '}
