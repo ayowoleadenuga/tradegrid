@@ -14,7 +14,7 @@ function MyFooter() {
       <IconContext.Provider
         value={{ color: 'rgba(14, 31, 51, 1)', size: '0.9em' }}
       >
-        <footer className="footer">
+        <footer className="footer" id="footer">
           <div className=" footer-row">
             <div className=" footer-col footer-first ">
               <a className="navbar-brand mb-5 mt-0" href="/">
@@ -77,7 +77,7 @@ function MyFooter() {
               <h4>Help</h4>
               <ul>
                 <li>
-                  <Link to="#faq">FAQ</Link>
+                  <a href="#f_a_q">FAQ</a>
                 </li>
                 <li>
                   <Link to="/">Privacy Policy</Link>

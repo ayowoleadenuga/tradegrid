@@ -45,7 +45,7 @@ function AccordionSect() {
     },
   ]
     return (
-      <section className="accordion-sect" id="faq">
+      <section className="accordion-sect" id="f_a_q">
         <div className="frequent-qst text-center">
           <h3>Frequently Asked Questions</h3>
           <p>Below are questions we've been asked the most about Tradegrid.</p>

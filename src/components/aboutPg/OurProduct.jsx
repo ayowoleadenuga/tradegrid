@@ -1,5 +1,5 @@
 import React from 'react'
-import Product from '../../assets/product.png'
+import Product from '../../assets/product2.jpeg'
 import Tabs from './Tabs'
 function OurProduct() {
 

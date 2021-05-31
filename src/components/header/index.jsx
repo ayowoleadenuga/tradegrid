@@ -1,16 +1,17 @@
 import React, { useState} from 'react'
 import MyButton from '../button'
-import {Link} from 'react-router-dom'
+import {Link, withRouter} from 'react-router-dom'
 
 import './style.css'
 import clsx from 'clsx'
 
-function MyNav({logo, clsName, clsBar, active}) {
+function MyNav({logo, clsName, clsBar, active, history}) {
     const [open, setOpen] = useState(false)
     const navToggler = () => {
       setOpen(!open)
 
     }
+    
   return (
     <nav className="mynavbar">
       <Link to="/" className="navbar-brand">
@@ -55,9 +56,9 @@ function MyNav({logo, clsName, clsBar, active}) {
           </li>
 
           <li className="">
-            <Link to="#faq" className={clsx('nav-link ', clsName)}>
+            <a href="#f_a_q" className={clsx('nav-link ', clsName)}>
               FAQ
-            </Link>
+            </a>
           </li>
         </ul>
 
@@ -73,4 +74,4 @@ function MyNav({logo, clsName, clsBar, active}) {
   )
 }
 
-export default MyNav
+export default withRouter(MyNav)
