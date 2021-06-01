@@ -8,7 +8,7 @@ function PrivacyMessage() {
             At TradeGrid LLC (“we”, “us”, “our” “TradeGrid”, “Company”), we
             recognize your privacy is important. This Policy explains our
             privacy practices on our website [
-            <a href="">https://www.thetradegrid.com</a>] (the “Site”) and our
+            <a href="/">https://www.thetradegrid.com</a>] (the “Site”) and our
             mobile applications (collectively “the Platforms”). This Policy also
             explains what information we collect about our customers and how we
             use this information. This Privacy Policy is designed to be read in
@@ -434,14 +434,14 @@ function PrivacyMessage() {
               Right to Rectification: Users can modify or change their name,
               email password, and mobile login PIN via their profile. For all
               other requests, such as updating email address or mobile number,
-              please contact us at <a href="">support@thetradegrid.com</a>
+              please contact us at <a href="mailto:support@thetradegrid.com">support@thetradegrid.com</a>
             </li>
             <li>
               Right of Access, Right to Erasure, Right to Restrict Processing:
               Users can request access or erasure of their Personal Information,
               as well as request restriction on further processing of their
               Personal Information by contacting us at{' '}
-              <a href="">support@thetradegrid.com</a>. Please allow up to 30
+              <a href="mailto:support@thetradegrid.com">support@thetradegrid.com</a>. Please allow up to 30
               days for requests to be processed. The Company reserves the right
               to charge a reasonable fee to process excessive or repeat
               requests.
@@ -483,7 +483,7 @@ function PrivacyMessage() {
           <p>
             If you have questions regarding your data privacy rights or would
             like to submit a related data privacy right request, please email us
-            at <a href="">support@thetradegrid.com</a>. Please allow up to 30
+            at <a href="mailto:support@thetradegrid.com">support@thetradegrid.com</a>. Please allow up to 30
             days for requests to be processed. The Company reserves the right to
             charge a reasonable fee to process excessive or repeat requests.
           </p>
@@ -492,7 +492,7 @@ function PrivacyMessage() {
               If you have general questions concerning this Privacy Policy,
               please contact us at:
             </p>
-            <a href="">support@thetradegrid.com</a>
+            <a href="mailto:support@thetradegrid.com">support@thetradegrid.com</a>
             <p>Tel: [+234]</p>
             <p>
               <strong>TradeGrid, LLC.</strong>{' '}

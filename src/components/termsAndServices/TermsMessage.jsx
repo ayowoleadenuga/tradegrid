@@ -162,7 +162,7 @@ function TermsMessage() {
             within the Mobile Application by identifying yourself and answering
             our security questions. Otherwise, you will need to call us on our
             customer care lines or email us at in{' '}
-            <a href="">support@thetradegrid.com.</a>
+            <a href="mailto:support@thetradegrid.com">support@thetradegrid.com.</a>
           </p>
         </div>
         <div className="message-div">
@@ -478,7 +478,7 @@ function TermsMessage() {
           <h5>Contacting Us</h5>
           <p>
             If you have any questions about this Agreement, please contact{' '}
-            <a href="">legal@thetradegrid.com</a>. This T&C was last updated on
+            <a href="mailto:legal@thetradegrid.com">legal@thetradegrid.com</a>. This T&C was last updated on
             31st May 2021.
           </p>
         </div>

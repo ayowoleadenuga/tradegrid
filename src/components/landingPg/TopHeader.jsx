@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 // import PetrolTank from '../../assets/petroleum.png'
-import BgVideo from '../../assets/bg-video.mp4'
+import BgVideo from '../../assets/bg-video2.mov'
 import MyButton from '../button'
 import MyNav from '../header'
 import Logo from '../../assets/TradeGridlogo.svg'
