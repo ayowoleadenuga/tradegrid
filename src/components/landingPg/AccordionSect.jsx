@@ -51,7 +51,7 @@ function AccordionSect() {
           <p>Below are questions we've been asked the most about Tradegrid.</p>
         </div>
         {accordionData.map((data, index) => (
-          <Accordion title={data.title} content={data.content} active={active} index={index} toggleActive={toggleActive} openId={openId} />
+          <Accordion title={data.title} content={data.content} active={active} index={index} toggleActive={toggleActive} openId={openId} key={`${index}-${data.title}`} />
         ))}
       </section>
     )

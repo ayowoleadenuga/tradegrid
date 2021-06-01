@@ -12,6 +12,45 @@
   max-width: 819px;
   width: 100%;
 }
+.MuiInputBase-input.Mui-disabled::placeholder {
+  color: red;
+}
+.uploadText {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -0.015em;
+
+  color: rgba(100, 100, 100, 0.6);
+
+}
+.uploadDiv p {
+  margin-bottom: unset;
+}
+.uploadDiv {
+  height: 40px;
+  border: 1px solid rgba(150, 150, 150, 0.2);
+  width: 480px;
+  margin-bottom: 50px;
+  border-radius: 4px;
+  height: 3.7em;
+  padding-top: 8px;
+  padding-left: 11px;
+  cursor: pointer
+}
+
+@media screen and (max-width: 769px) {
+  .uploadDiv {
+     width: 600px !important;
+  }
+}
+@media screen and (max-width: 1026px) {
+  .uploadDiv {
+     width: 430px !important;
+  }
+}
 /* welcome section */
 .welcome-div {
   margin: auto;

@@ -6,8 +6,7 @@ const sectionStyle = {
   backgroundImage: `linear-gradient(to bottom, rgba(14, 31, 51, 0.7),
 rgba(232, 115, 168, 0.7) ), url(${NewsTank})`,
   backgroundRepeat: 'no-repeat',
-  backgroundSize: '100vw 100%',
- 
+  backgroundSize: 'cover',
   backgroundPosition: 'center',
   
 }

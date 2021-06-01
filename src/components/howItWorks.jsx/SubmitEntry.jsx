@@ -1,12 +1,14 @@
 import React from 'react'
 import { makeStyles, withStyles } from '@material-ui/core/styles'
-import { TextField, MenuItem } from '@material-ui/core'
+import { TextField, MenuItem, Button } from '@material-ui/core'
 import { Link } from 'react-router-dom'
+import ClickImage from "../../assets/click.png"
 
 const CssTextField = withStyles({
   root: {
     '& label.Mui-focused': {
       color: 'rgba(150, 150, 150, 0.2)',
+    
     },
     '& .MuiInput-underline:after': {
       borderBottomColor: 'white',
@@ -14,7 +16,7 @@ const CssTextField = withStyles({
     '& .MuiOutlinedInput-root': {
       '& fieldset': {
         borderColor: 'rgba(150, 150, 150, 0.2)',
-        background: '#F9F9F9',
+        // background: '#F9F9F9',
       },
       '&:hover fieldset': {
         borderColor: 'rgba(150, 150, 150, 0.2)',
@@ -47,11 +49,8 @@ function SubmitEntry() {
   const [language, setLanguage] = React.useState('')
   const [degree, setDegree] = React.useState('')
   const [meansOfHearing, setMeansOfHearing] = React.useState('')
-  const [value, setValue] = React.useState('Controlled')
-
-  // const handleChange = (event) => {
-  //   setValue(event.target.value)
-  // }
+  const [value, setValue] = React.useState('')
+  const [file, setFile] = React.useState(null)
 
   const handleGender = (event) => {
     setGender(event.target.value)
@@ -59,6 +58,10 @@ function SubmitEntry() {
 
   const handleLanguage = (event) => {
     setLanguage(event.target.value)
+  }
+  const clickUpload = () => {
+    const elem = document.getElementById("upload");
+    elem.click();
   }
 
   const handleDegree = (event) => {
@@ -142,13 +145,14 @@ function SubmitEntry() {
             label="School name"
             variant="outlined"
             id="custom-css-outlined-input"
-          />
-          <CssTextField
-            className={classes.margin}
-            label="Upload document"
-            variant="outlined"
-            id="custom-css-outlined-input"
-          />
+          />           
+          
+          <div className="uploadDiv" onClick={clickUpload}>
+            <p className="uploadText">Upload document</p>
+            <img alt="" src={ClickImage} /> <span>{file && file.name}</span>
+          </div>
+          <input type="file" onChange={e=>setFile(e.target.files[0])} style={{display: 'none'}} id="upload" />
+          
           <CssTextField
             className={classes.margin}
             label="Where did you hear about us"

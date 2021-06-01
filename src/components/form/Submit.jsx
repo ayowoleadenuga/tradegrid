@@ -43,13 +43,13 @@ function Submit() {
   const classes = useStyles()
   return (
     <FormComp clsName="pink-div">
-      <div class="next-form">
-        <label for="inputEmail4" class="form-label">
+      <div className="next-form">
+        <label for="inputEmail4" className="form-label">
           Average Weekly Drop downs on Volumes
         </label>
         <input
           type="text"
-          class="form-control"
+          className="form-control"
           placeholder="Average weekly drop downs on volumes"
           aria-label="Average weekly drop downs "
         />
@@ -95,7 +95,7 @@ function Submit() {
 
       <div className="submit-btn">
         <Link to="/signup" className="previous">
-          <i class="fas fa-chevron-left"></i> Previous
+          <i className="fas fa-chevron-left"></i> Previous
         </Link>
         <Link to="/submit" className="padded-btn mybtn">
           Submit

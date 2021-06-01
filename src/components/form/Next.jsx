@@ -59,73 +59,73 @@ function Next() {
           variant="outlined"
           id="custom-css-outlined-input"
         />
-        <div class="row next-form">
-          <div class="col-lg-6 col-12">
-            <label for="inputEmail4" class="form-label">
+        <div className="row next-form">
+          <div className="col-lg-6 col-12">
+            <label for="inputEmail4" className="form-label">
               Business Name
             </label>
             <input
               type="text"
-              class="form-control"
+              className="form-control"
               placeholder="Business Name"
               aria-label="Business name"
             />
           </div>
-          <div class="col-lg-6 col-12">
-            <label for="inputEmail4" class="form-label">
+          <div className="col-lg-6 col-12">
+            <label for="inputEmail4" className="form-label">
               Business Location
             </label>
             <input
               type="text"
-              class="form-control"
+              className="form-control"
               placeholder="Business Location"
               aria-label="Business location"
             />
           </div>
         </div>
-        <div class="row next-form">
-          <div class="col-lg-6 col-12">
-            <label for="inputEmail4" class="form-label">
+        <div className="row next-form">
+          <div className="col-lg-6 col-12">
+            <label for="inputEmail4" className="form-label">
               Applicant's Name
             </label>
             <input
               type="text"
-              class="form-control"
+              className="form-control"
               placeholder="Applicant's Name"
               aria-label="Applicant's name"
             />
           </div>
-          <div class="col-lg-6 col-12">
-            <label for="inputEmail4" class="form-label">
+          <div className="col-lg-6 col-12">
+            <label for="inputEmail4" className="form-label">
               Applicant's Phone Number
             </label>
             <input
               type="text"
-              class="form-control"
+              className="form-control"
               placeholder="Applicant's Role within the Business / Company"
               aria-label="Applicant's role"
             />
           </div>
         </div>
-        <div class="row next-form">
-          <div class="col-lg-6 col-12">
-            <label for="inputEmail4" class="form-label">
+        <div className="row next-form">
+          <div className="col-lg-6 col-12">
+            <label for="inputEmail4" className="form-label">
               Applicant's Email Address
             </label>
             <input
               type="text"
-              class="form-control"
+              className="form-control"
               placeholder="Applicant's Email Address"
               aria-label="Applicant's email"
             />
           </div>
-          <div class="col-lg-6 col-12">
-            <label for="inputEmail4" class="form-label">
+          <div className="col-lg-6 col-12">
+            <label for="inputEmail4" className="form-label">
               Applicant's Phone Number
             </label>
             <input
               type="text"
-              class="form-control"
+              className="form-control"
               placeholder="Applicant's Phone Number"
               aria-label="Applicant's phone number"
             />

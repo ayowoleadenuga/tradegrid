@@ -9,6 +9,7 @@ import TimelineContent from '@material-ui/lab/TimelineContent'
 import Google from '../../assets/google.svg'
 import Apple from '../../assets/apple.svg'
 import DashGroup from '../../assets/seller-group.png'
+
 const useStyles = makeStyles({
   timeline: {
     marginTop:30,
@@ -54,7 +55,7 @@ function SellerProfile() {
                 Download the App{' '}
                 <a
                   className="app-link"
-                  href="www.thetradegrid.com/app"
+                  href="www.thetradegrid.com/signup"
                   target="_blank"
                 >
                   {' '}

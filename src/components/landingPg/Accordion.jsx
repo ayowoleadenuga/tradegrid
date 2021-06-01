@@ -1,6 +1,5 @@
 import React from 'react'
 function Accordion({  title, content, active, toggleActive, index, openId }) {
- console.log({index, openId})
   return (
     <div
       className={
