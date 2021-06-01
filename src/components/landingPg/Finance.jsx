@@ -3,8 +3,8 @@ import Executive from '../../assets/executive.jpg'
 import MyButton from '../button'
 function CardFinance() {
     return (
-      <div className="trade-flex  finances">
-        <div className="img">
+      <div className="trade-flex finances">
+        <div className="img left-img">
           <img src={Executive} alt="" />
         </div>
 

@@ -26,8 +26,8 @@ function TradeLogic() {
         </div>
         {/* right div */}
         <div className="trade-flex">
-          <div className="img">
-            <img className="tank-img" src={Ship} alt="" />
+          <div className="img-logistics">
+            <img  src={Ship} alt="" />
           </div>
         </div>
       </div>

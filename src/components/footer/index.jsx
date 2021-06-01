@@ -80,10 +80,10 @@ function MyFooter() {
                   <a href="#f_a_q">FAQ</a>
                 </li>
                 <li>
-                  <Link to="/">Privacy Policy</Link>
+                  <Link to="/privacy">Privacy Policy</Link>
                 </li>
                 <li>
-                  <Link to="/">Terms and Conditions</Link>
+                  <Link to="/terms">Terms and Conditions</Link>
                 </li>
                 <li>
                   <Link to="/">Contact Us</Link>

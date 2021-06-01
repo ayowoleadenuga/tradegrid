@@ -7,6 +7,8 @@ import BuyerPage from '../buyers'
 import HowItWorks from '../howItWorks.jsx'
 import LandingPage from '../landingPg'
 import SellerPage from '../sellers'
+import TermsAndCondition from '../termsAndServices'
+import PrivacyPolicy from '../privacy'
 
 const Routes = () => {
 
@@ -20,6 +22,8 @@ const Routes = () => {
         <Route exact path="/launchers" component={HowItWorks} />
         <Route exact path="/signup" component={Next} />
         <Route exact path="/submit" component={Submit} />
+        <Route exact path="/terms" component={TermsAndCondition} />
+        <Route exact path="/privacy" component={PrivacyPolicy} />
       </Switch>
     </>
   )
