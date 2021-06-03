@@ -12,7 +12,7 @@ function CardLaunchers() {
         <div className="btn-div">
           <MyButton
             className="btn-text"
-            path="/launchers"
+            path="/citylaunchers"
             text="Learn more about city launchers"
           />
         </div>

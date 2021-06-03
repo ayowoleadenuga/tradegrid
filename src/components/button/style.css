@@ -14,6 +14,22 @@
 .mybtn:hover {
   background-color: #e873a8;
 }
+.splashScreenBtn {
+  background-color: #e873a8;
+  color: #fff !important;
+  border-radius: 50px;
+  padding: 15px 35px;
+  font-size: 16px;
+  font-weight: 400;
+  border: none !important;
+  outline: none !important;
+  transition: 0.7s ease;
+  text-decoration: none !important;
+}
+.splashScreenBtn:hover {
+  background-color: #0e1f33;
+}
+
 .padded-btn {
   height: 60px;
   font-size: 16px;

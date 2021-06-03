@@ -19,7 +19,7 @@ const Routes = () => {
         <Route exact path="/about" component={AboutPage} />
         <Route exact path="/buyer" component={BuyerPage} />
         <Route exact path="/seller" component={SellerPage} />
-        <Route exact path="/launchers" component={HowItWorks} />
+        <Route exact path="/citylaunchers" component={HowItWorks} />
         <Route exact path="/signup" component={Next} />
         <Route exact path="/submit" component={Submit} />
         <Route exact path="/terms" component={TermsAndCondition} />

@@ -67,6 +67,7 @@ function MyNav({logo, clsName, clsBar, active, history}) {
             text="Signup to start trading"
             path="/signup"
             clsName="mobile-btn"
+            buttonId="landing"
           />
         </div>
       </div>

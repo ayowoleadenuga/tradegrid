@@ -1,5 +1,6 @@
 {
   "name": "trade-grid-app",
+  "homepage": "https://www.thetradegrid.co",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
