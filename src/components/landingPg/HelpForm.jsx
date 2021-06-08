@@ -141,7 +141,7 @@ function HelpFormSection() {
 
         <div className="call-us-div">
           <div>
-           <p>Or call us on; </p><p>USA<span> +1(312) 779 9374</span></p> <p>UK <span> +44 7543 149055</span></p><p>NIG <span>+234 811 975250</span></p> 
+           <p>Or call us on; </p><p>USA<span> +1(312) 872 2863</span></p> <p>UK <span> +44 7543 149055</span></p><p>NIG <span>+234 811 975250</span></p> 
           </div>
 
           {success && <p style={{color: "green"}}>Your message was sent successfully!</p>}

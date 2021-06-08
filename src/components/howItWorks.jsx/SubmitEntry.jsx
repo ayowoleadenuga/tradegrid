@@ -50,13 +50,18 @@ const emailjObj = {
   SERVICE_ID: "service_0hk4e47",
   TEMPLATE_ID: "template_yl6qq5p"
 }
+
 function SubmitEntry() {
   const classes = useStyles()
   const [gender, setGender] = useState('')
   const [language, setLanguage] = useState('')
+  const [lastName, setLastName] = useState('')
+  const [email, setEmail] = useState('')
   const [degree, setDegree] = useState('')
   const [meansOfHearing, setMeansOfHearing] = useState('')
   const [value, setValue] = useState('')
+  const [phone, setPhone] = useState('')
+  const [school, setSchool] = useState('')
   const [file, setFile] = useState(null)
   const [loading, setLoading] = useState(false)
   const [success, setSuccess] = useState(false);
@@ -130,12 +135,16 @@ function SubmitEntry() {
             label="Last name"
             variant="outlined"
             name="last_name"
+            value={lastName}
+            onChange={e=>setLastName(e.target.value)}
             id="custom-css-outlined-input"
           />
           <CssTextField
             className={classes.margin}
             label="Email"
             name="email"
+            value={email}
+            onChange={e => setEmail(e.target.value)}
             variant="outlined"
             id="custom-css-outlined-input"
           />
@@ -143,6 +152,8 @@ function SubmitEntry() {
             className={classes.margin}
             label="Phone number"
             variant="outlined"
+            value={phone}
+            onChange={e=>setPhone(e.target.value)}
             name="phone_number"
             id="custom-css-outlined-input"
           />
@@ -182,6 +193,8 @@ function SubmitEntry() {
             label="School name"
             name="school_name"
             variant="outlined"
+            value={school}
+            onChange={e=>setSchool(e.target.value)}
             id="custom-css-outlined-input"
           />           
           
@@ -198,16 +211,8 @@ function SubmitEntry() {
             variant="outlined"
             name="mode_of_reach"
             value={meansOfHearing}
-            select
             onChange={(e)=>setMeansOfHearing(e.target.value)}
-          >
-            <MenuItem value={"Campus outreach"}>Campus Outreach</MenuItem>
-            <MenuItem value={"Social media"}>Social Media</MenuItem>
-            <MenuItem value={"Word of mouth"}>Word of Mouth</MenuItem>
-            <MenuItem value={"Fliers and handbill"}>Fliers and HandBill</MenuItem>
-            <MenuItem value={"Website"}>Website</MenuItem>
-            <MenuItem value={"Others"}>Others</MenuItem>
-          </CssTextField>
+          />
         </div>
         
         <div className="left-btn">
