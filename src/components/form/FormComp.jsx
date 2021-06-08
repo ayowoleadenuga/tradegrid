@@ -100,7 +100,7 @@ function FormComp() {
           <div className="my-absolute">
             <Link to="/" className="navbar-brand form-nav">
               <img src={Logo} alt="" />
-              <span><small>&#8592; Back to Home</small></span>
+              <span className="back-home"><small>&#8592; Back to Home</small></span>
             </Link>
 
             <h3>Welcome</h3>
