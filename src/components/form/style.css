@@ -173,6 +173,16 @@ label {
   align-items: flex-start;
 }
 
+.my-absolute h3 {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.my-absolute p {
+  margin-bottom: 30px;
+}
+
+
 .form-sect {
     flex-direction: column;
   height: 100%;
@@ -180,8 +190,8 @@ label {
 
   .form-welcome-sect {
   max-width: 100%;
-  min-height: 800px;
-  height: 100%;
+  min-height: 550px;
+  height:100%;
   padding: 50px 30px;
   
 }
@@ -192,11 +202,85 @@ label {
 }
 }
 
+@media screen and (max-width:615px){
+  .form-welcome-sect {
+  max-width: 100%;
+  padding: 30px 30px;
+  
+}
 
+.my-absolute h3 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.my-absolute p {
+  margin-bottom: 20px;
+}
+
+.back-home{
+  font-size: 16px;
+}
+}
+
+@media screen and (max-width:491px){
+  .form-welcome-sect {
+    max-height: 700px;
+  max-width: 100%;
+  padding: 30px 30px;
+  
+}
+
+
+
+.my-absolute h3 {
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.my-absolute p {
+  margin-bottom: 15px;
+  font-size: 14px !important;
+}
+}
 @media screen and (max-width:415px){
    .form-welcome-sect {
   max-width: 100%;
-  min-height: 850px;
+  min-height: 550px;
   
+}
+
+.my-absolute h3 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+}
+
+@media screen and (max-width:376px){
+  .form-welcome-sect {
+  padding: 20px 30px;
+min-height: 580px;
+}
+
+}
+
+@media screen and (max-width:345px){
+  .form-welcome-sect {
+  padding: 20px 30px;
+min-height: 620px;
+}
+
+}
+
+
+@media screen and (max-width:308px){
+  .form-welcome-sect {
+  padding: 20px 30px;
+min-height: 700px;
+}
+
+.form-sect .large {
+ width: 250px;
+ object-fit: cover;
 }
 }

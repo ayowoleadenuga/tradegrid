@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { Link } from 'react-router-dom'
 // import PetrolTank from '../../assets/petroleum.png'
 import BgVideo from '../../assets/bg-video2.mov'
@@ -17,14 +17,13 @@ const sectionStyle = {
 }
 
 function TopHeader() {
+   const [open, setOpen] = useState(false)
+   const navToggler = () => {
+     setOpen(!open)
+   }
   return (
     <div className="top-header" style={sectionStyle}>
-      <div className="web-nav">
         <MyNav logo={Logo} buttonId="pink" />
-      </div>
-      <div className="mobile-nav">
-          <MyNav logo={Logo} buttonId="pink" />
-        </div>
       <div className="top-header-text">
         <h1>Earth’s Oil & Gas Marketplace</h1>
         <p className="white-p">

@@ -348,9 +348,9 @@
     margin-top: 50px;
   }
 
-  .learn-btn-div {
+  /* .learn-btn-div {
     width: 70%;
-  }
+  } */
 
   .trade-flex .img,
   .trade-flex .img-logistics {
@@ -531,10 +531,47 @@
   }
 }
 
+@media screen and (max-width:500px){
+ .news-form input {
+    width: 90%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width:465px){
+    .trade-flex .img, .trade-flex .img-logistics{
+    height: 350px;
+    max-width: 95%;
+  }
+
+  .trade-flex .img::before {
+  
+  left: 10px;
+  top: 10px;
+  z-index: 1;
+}
+
+.trade-flex .left-img::before {
+  left: 0px;
+  border-radius: 0px 10px 0px 10px !important;
+}
+
+.trade-flex .left-img img {
+  left: 10px;
+  top: 0px;
+  border-radius: 0px 10px 0px 10px !important;
+}
+}
 @media screen and (max-width: 415px) {
   .top-header {
     margin: 0;
     padding: 0px 15px 50px 15px;
+  }
+
+    .learn-btn-div {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
   }
 }
 
@@ -556,13 +593,15 @@
     margin: auto;
   }
 
-  .learn-btn-div {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-  }
-
   .learn-section .home-phone {
     margin-top: 70px;
+  }
+}
+
+@media screen and (max-width:300px){
+      .learn-btn-div {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
   }
 }

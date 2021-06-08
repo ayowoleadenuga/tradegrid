@@ -89,7 +89,7 @@ section {
   }
 }
 
-@media screen and (max-width: 415px){
+@media screen and (max-width: 500px){
   section {
 padding: 100px 15px;
 }
