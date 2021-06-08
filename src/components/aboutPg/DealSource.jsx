@@ -1,6 +1,7 @@
 import React from 'react'
 import MyButton from '../button'
 import Check from '../../assets/check.svg'
+
 function DealSource() {
     return (
       <>
@@ -23,8 +24,7 @@ function DealSource() {
                 The TradeGrid platform connects to thousands of product
                 off-takers and suppliers both locally and internationally,
                 creating an unrivalled digital eco-system which ultimately
-                delivers increased levels of commercial activity to users. Learn
-                How… (link to TradeGrid Ninja™- for sellers).
+                delivers increased levels of commercial activity to users.
               </p>
               <MyButton
                 className="btn-text"

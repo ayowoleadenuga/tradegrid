@@ -1,6 +1,6 @@
 {
   "name": "trade-grid-app",
-  "homepage": "https://www.thetradegrid.co",
+  "homepage": "https://www.thetradegrid.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -10,6 +10,7 @@
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
     "clsx": "^1.1.1",
+    "emailjs-com": "^2.6.4",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-icons": "^4.2.0",

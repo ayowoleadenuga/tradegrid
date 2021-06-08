@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import NewsTank from '../../assets/newsletter.png'
+import emailjs from 'emailjs-com';
 
 
 const sectionStyle = {
@@ -7,10 +8,48 @@ const sectionStyle = {
 rgba(232, 115, 168, 0.7) ), url(${NewsTank})`,
   backgroundRepeat: 'no-repeat',
   backgroundSize: 'cover',
-  backgroundPosition: 'center',
-  
+  backgroundPosition: 'center'
 }
+const emailjObj = {
+  USER_ID: "user_q610hC24vrfmB3ywLRLse",
+  Access_Token: "667aa5d39e563b89ada2b7bbad6b5d94",
+  SERVICE_ID: "service_0hk4e47",
+  TEMPLATE_ID: "template_fr3m9pb"
+}
+
 function Newsletter() {
+  const [email, setEmail] = useState("")
+  const [loading, setLoading] = useState(false)
+  const [success, setSuccess] = useState(true);
+  const [error, setError] = useState(false)
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+    setSuccess(false);
+    setError(false);
+    await emailjs.sendForm(emailjObj.SERVICE_ID, emailjObj.TEMPLATE_ID, e.target, emailjObj.USER_ID)
+      .then((result) => {
+          console.log(result);
+          setLoading(false);
+          setError(false)
+          setSuccess(true)
+      }, (error) => {
+        setSuccess(false);
+        setError(true);
+        console.log(error.text);
+        setLoading(false);
+      });
+  }
+  useEffect(() => {
+    if(success || error) {
+      setTimeout(() => {
+        setSuccess(false);
+        setError(false);
+      }, 500);
+    }
+    
+  }, [success, error])
   return (
     <section className="news-div" style={sectionStyle}>
      
@@ -19,17 +58,26 @@ function Newsletter() {
           Stay up-to-date with announcements, news & updates, discount deals and much
           more.
         </p>
-        <form className="news-form">
+        <form className="news-form" onSubmit={handleSubmit}>
           <div className="input-div">
             <input
               type="email"
               className="form-control"
               id="exampleInputEmail1"
+              value={email}
+              name="email"
+              onChange={(e)=> setEmail(e.target.value)}
               aria-describedby="emailHelp"
             />
           </div>
           <div>
-            <button className="mybtn padded-btn">Subscribe</button>
+            <button className="mybtn padded-btn">
+              {loading ? <small><i>submitting...</i></small>: "Subscribe"}
+            </button>
+          </div>
+          <div>
+          {success && <p style={{color: "green"}}>Your message was sent successfully!</p>}
+          {error && <p style={{color: "red"}}>Oops! An error has occured. Please try again</p>}
           </div>
         </form>
       

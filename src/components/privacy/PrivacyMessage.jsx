@@ -493,7 +493,7 @@ function PrivacyMessage() {
               please contact us at:
             </p>
             <a href="mailto:support@thetradegrid.com">support@thetradegrid.com</a>
-            <p>Tel: [+234]</p>
+            
             <p>
               <strong>TradeGrid, LLC.</strong>{' '}
             </p>

@@ -1,48 +1,25 @@
 import React from 'react'
 import StyledCheckbox from './Checkbox'
-import FormComp from './FormComp'
-import { Link } from 'react-router-dom'
-import { makeStyles, withStyles } from '@material-ui/core/styles'
-import { TextField } from '@material-ui/core'
-const CssTextField = withStyles({
-  root: {
-    '& label.Mui-focused': {
-      color: 'rgba(100, 100, 100, 0.6)',
-    },
-    '& .MuiInput-underline:after': {
-      borderBottomColor: 'white',
-    },
-    '& .MuiOutlinedInput-root': {
-      '& fieldset': {
-        borderColor: 'rgba(150, 150, 150, 0.2)',
-        background: '#fff',
-      },
-      '&:hover fieldset': {
-        borderColor: 'rgba(150, 150, 150, 0.2)',
-      },
-      '&.Mui-focused fieldset': {
-        borderColor: 'rgba(150, 150, 150, 0.2)',
-      },
-    },
-  },
-})(TextField)
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    width: '100%',
-    marginBottom: '50px',
-  },
-  margin: {
-    margin: theme.spacing(0),
-    width: '100%',
-    marginBottom: '50px',
-  },
-}))
-
-function Submit() {
-  const classes = useStyles()
+function Submit(props) {
+  const {weeklyDropdown, setWeeklyDropdown,
+  interestedInBuying, setInterestedInBuying,
+  interestedInSelling, setInterestedInSelling,
+  interestedInCredit, setInterestedInCredit,
+  interestedInEscrowPayment, setInterestedInEscrowPayment,
+  interestedInOthers, setInterestedInOthers,
+  productInterestPMS, setProductInterestPMS,
+  productInterestAGO, setProductInterestAGO,
+  productInterestLPG, setProductInterestLPG,
+  productInterestDPK, setProductInterestDPK,
+  productInterestCNG, setProductInterestCNG,
+  productInterestLNG, setProductInterestLNG, error,
+  productInterestLubricants, setProductInterestLubricants,
+  productInterestPE, setProductInterestPE, loading, success,
+  productInterestBaseOils, setProductInterestBaseOils,
+  productInterestOther, setProductInterestOther, setPage} = props
   return (
-    <FormComp clsName="pink-div">
+    <>
       <div className="next-form">
         <label for="inputEmail4" className="form-label">
           Average Weekly Drop downs on Volumes
@@ -50,8 +27,11 @@ function Submit() {
         <input
           type="text"
           className="form-control"
+          name="average_weeekly_dropdown"
           placeholder="Average weekly drop downs on volumes"
           aria-label="Average weekly drop downs "
+          value={weeklyDropdown}
+          onChange={e=>setWeeklyDropdown(e.target.value)}
         />
       </div>
       <div>
@@ -59,49 +39,63 @@ function Submit() {
           <strong>Interested in?</strong>
           <em> (Select one or more that applies)</em>{' '}
         </p>
-        <StyledCheckbox name="retail" label="Buying" />
-        <StyledCheckbox name="bulk" label="Selling" />
-        <StyledCheckbox name="depot" label="Credit facilities" />
-        <StyledCheckbox name="int'l" label="Escrow Payment Facility" />
+        <StyledCheckbox name="buying" value={interestedInBuying} onChange={()=>setInterestedInBuying(!interestedInBuying)} label="Buying" />
+        <StyledCheckbox name="selling" value={interestedInSelling} onChange={()=>setInterestedInSelling(!interestedInSelling)} label="Selling" />
+        <StyledCheckbox name="creditFacilities" value={interestedInCredit} onChange={()=>setInterestedInCredit(!interestedInCredit)} label="Credit facilities" />
+        <StyledCheckbox name="escrowPayment" value={interestedInEscrowPayment} onChange={()=>setInterestedInEscrowPayment(!interestedInEscrowPayment)} label="Escrow Payment Facility" />
 
-        <CssTextField
-          className={classes.margin}
-          label="Other"
-          variant="outlined"
-          id="custom-css-outlined-input"
-        />
+        
+        <div className="next-form">
+          <input
+            type="text"
+            className="form-control"
+            placeholder="Other"
+            aria-label="Other"
+            name="otherInterests"
+            value={interestedInOthers}
+            onChange={e=>setInterestedInOthers(e.target.value)}
+          />
+        </div>
       </div>
       <div>
         <p>
           <strong>Products Interest </strong>
           <em> (Select one or more that applies)</em>{' '}
         </p>
-        <StyledCheckbox name="pms" label="PMS" />
-        <StyledCheckbox name="ago" label="AGO" />
-        <StyledCheckbox name="lpg" label="LPG" />
-        <StyledCheckbox name="dpk" label="DPK" />
-        <StyledCheckbox name="cng" label="CNG" />
-        <StyledCheckbox name="lng" label="LNG" />
-        <StyledCheckbox name="lubricants" label="Lubricants" />
-        <StyledCheckbox name="parts" label="Parts & Equipments" />
-        <StyledCheckbox name="base oils" label="Base Oils" />
-        <CssTextField
-          className={classes.margin}
-          label="Other"
-          variant="outlined"
-          id="custom-css-outlined-input"
-        />
+        <StyledCheckbox value={productInterestPMS} onChange={()=>setProductInterestPMS(!productInterestPMS)} name="pms" label="PMS" />
+        <StyledCheckbox value={productInterestAGO} onChange={()=>setProductInterestAGO(!productInterestAGO)} name="ago" label="AGO" />
+        <StyledCheckbox value={productInterestLPG} onChange={()=>setProductInterestLPG(!productInterestLPG)} name="lpg" label="LPG" />
+        <StyledCheckbox value={productInterestDPK} onChange={()=>setProductInterestDPK(!productInterestDPK)} name="dpk" label="DPK" />
+        <StyledCheckbox value={productInterestCNG} onChange={()=>setProductInterestCNG(!productInterestCNG)} name="cng" label="CNG" />
+        <StyledCheckbox value={productInterestLNG} onChange={()=>setProductInterestLNG(!productInterestLNG)} name="lng" label="LNG" />
+        <StyledCheckbox value={productInterestLubricants} onChange={()=>setProductInterestLubricants(!productInterestLubricants)} name="lubricants" label="Lubricants" />
+        <StyledCheckbox value={productInterestPE} onChange={()=>setProductInterestPE(!productInterestPE)} name="parts_and_equipments" label="Parts & Equipments" />
+        <StyledCheckbox value={productInterestBaseOils} onChange={()=>setProductInterestBaseOils(!productInterestBaseOils)} name="base_oils" label="Base Oils" />
+        
+        <div className="next-form">
+          <input
+            type="text"
+            className="form-control"
+            placeholder="Other"
+            name="Other_product_interest"
+            aria-label="Other"
+            value={productInterestOther}
+            onChange={(e)=>setProductInterestOther(e.target.value)}
+          />
+        </div>
       </div>
-
+      
       <div className="submit-btn">
-        <Link to="/signup" className="previous">
+        <button onClick={()=>setPage(1)} type="button" style={{color: "#fff !important"}} className="padded-btn mybtn ">
           <i className="fas fa-chevron-left"></i> Previous
-        </Link>
-        <Link to="/submit" className="padded-btn mybtn">
-          Submit
-        </Link>
+        </button>
+        {success && <p style={{color: "green"}}>Your message was sent successfully!</p>}
+          {error && <p style={{color: "red"}}>Oops! An error has occured. Please try again</p>}
+        <button type="submit" className="padded-btn mybtn">
+        {loading ? <small><i>submitting...</i></small>: "Submit"}
+        </button>
       </div>
-    </FormComp>
+    </>
   )
 }
 

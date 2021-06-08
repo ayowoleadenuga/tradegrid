@@ -52,7 +52,7 @@ const useStyles = makeStyles({
 })
 
 // Inspired by blueprintjs
-function StyledCheckbox({name, label}) {
+function StyledCheckbox({name, label, value, ...rest}) {
   const classes = useStyles()
 
   return (
@@ -63,13 +63,13 @@ function StyledCheckbox({name, label}) {
           disableRipple
           name={name}
           color="default"
-          value="my checker"
+          checked={value}
           checkedIcon={
             <span className={clsx(classes.icon, classes.checkedIcon)} />
           }
           icon={<span className={classes.icon} />}
           inputProps={{ 'aria-label': 'decorative checkbox' }}
-  
+          {...rest}
         />
       }
       label={label}

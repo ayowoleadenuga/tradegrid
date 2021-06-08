@@ -1,143 +1,142 @@
 import React from 'react'
 import StyledCheckbox from './Checkbox'
-import FormComp from './FormComp'
-import { Link } from 'react-router-dom'
-import { makeStyles, withStyles } from '@material-ui/core/styles'
-import { TextField} from '@material-ui/core'
-const CssTextField = withStyles({
-  root: {
-    '& label.Mui-focused': {
-      color: 'rgba(100, 100, 100, 0.6)',
-    },
-    '& .MuiInput-underline:after': {
-      borderBottomColor: 'white',
-    },
-    '& .MuiOutlinedInput-root': {
-      '& fieldset': {
-        borderColor: 'rgba(150, 150, 150, 0.2)',
-        background: '#fff',
-      },
-      '&:hover fieldset': {
-        borderColor: 'rgba(150, 150, 150, 0.2)',
-      },
-      '&.Mui-focused fieldset': {
-        borderColor: 'rgba(150, 150, 150, 0.2)',
-      },
-    },
-  },
-})(TextField)
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    width: '100%',
-    marginBottom: '50px',
-  },
-  margin: {
-    margin: theme.spacing(0),
-    width: '100%',
-    marginBottom: '50px',
-  },
-}))
+function Next(props) {
+  const {retail, setRetail,
+  bulk, setBulk,
+  depot, setDepot,
+  international, setInternational,
+  buyer, setBuyer,
+  other, setOther,
+  businessName, setBusinessName,
+  businessLocation, setBusinessLocation,
+  applicantName, setApplicantName,
+  applicantRole, setApplicantRole,
+  applicantEmail, setApplicantEmail,
+  applicantNumber, setApplicantNumber, setPage} = props
 
-function Next() {
-  const classes = useStyles()
   return (
-    <FormComp clsName="grey-div">
+    <>
       <p>
         <strong>Business Category </strong>
-        <em> (Select one or more that applies)</em>{' '}
+        <em>(Select one or more that applies)</em>{' '}
       </p>
-      <StyledCheckbox name="retail" label="Retail station" />
-      <StyledCheckbox name="bulk" label="Bulk Marketer" />
-      <StyledCheckbox name="depot" label="Depot Owner" />
-      <StyledCheckbox name="int'l" label="International Trader" />
-      <StyledCheckbox name="buyer" label="Commercial / Industrial Buyer" />
-      <form className="">
-        <CssTextField
-          className={classes.margin}
-          label="Other"
-          variant="outlined"
-          id="custom-css-outlined-input"
-        />
-        <div className="row next-form">
-          <div className="col-lg-6 col-12">
-            <label for="inputEmail4" className="form-label">
-              Business Name
-            </label>
-            <input
-              type="text"
-              className="form-control"
-              placeholder="Business Name"
-              aria-label="Business name"
-            />
+      {/* <form> */}
+        <StyledCheckbox onChange={()=>setRetail(!retail)} name="retail_station" value={retail} label="Retail station" />
+        <StyledCheckbox onChange={()=>setBulk(!bulk)} name="bulk_marketer" value={bulk} label="Bulk Marketer" />
+        <StyledCheckbox onChange={()=>setDepot(!depot)} name="depot_owner" value={depot} label="Depot Owner" />
+        <StyledCheckbox onChange={()=>setInternational(!international)} name="international_trader" value={international} label="International Trader" />
+        <StyledCheckbox onChange={()=>setBuyer(!buyer)} name="commercial_buyer" value={buyer} label="Commercial / Industrial Buyer" />
+          <div className="row next-form">
+            <div className="col-lg-12 col-12">
+              <input
+                type="text"
+                className="form-control"
+                value={other}
+                onChange={e=>setOther(e.target.value)}
+                placeholder="Other"
+                name="other_business_category"
+                aria-label="Other"
+              />
+            </div>
           </div>
-          <div className="col-lg-6 col-12">
-            <label for="inputEmail4" className="form-label">
-              Business Location
-            </label>
-            <input
-              type="text"
-              className="form-control"
-              placeholder="Business Location"
-              aria-label="Business location"
-            />
+          <div className="row next-form">
+            <div className="col-lg-6 col-12">
+              <label for="inputEmail4" className="form-label">
+                Business Name
+              </label>
+              <input
+                type="text"
+                className="form-control"
+                placeholder="Business Name"
+                name="business_name"
+                value={businessName}
+                onChange={e=>setBusinessName(e.target.value)}
+                aria-label="Business name"
+              />
+            </div>
+            <div className="col-lg-6 col-12">
+              <label for="inputEmail4" className="form-label">
+                Business Location
+              </label>
+              <input
+                type="text"
+                className="form-control"
+                name="business_location"
+                placeholder="Business Location"
+                aria-label="Business location"
+                value={businessLocation}
+                onChange={e=>setBusinessLocation(e.target.value)}
+              />
+            </div>
           </div>
-        </div>
-        <div className="row next-form">
-          <div className="col-lg-6 col-12">
-            <label for="inputEmail4" className="form-label">
-              Applicant's Name
-            </label>
-            <input
-              type="text"
-              className="form-control"
-              placeholder="Applicant's Name"
-              aria-label="Applicant's name"
-            />
+          <div className="row next-form">
+            <div className="col-lg-6 col-12">
+              <label for="inputEmail4" className="form-label">
+                Applicant's Name
+              </label>
+              <input
+                type="text"
+                className="form-control"
+                placeholder="Applicant's Name"
+                aria-label="Applicant's name"
+                name="applicant_name"
+                value={applicantName}
+                onChange={(e)=>setApplicantName(e.target.value)}
+              />
+            </div>
+            <div className="col-lg-6 col-12">
+              <label for="inputEmail4" className="form-label">
+                Applicant's Role
+              </label>
+              <input
+                type="text"
+                className="form-control"
+                name="applicant_role"
+                placeholder="Applicant's Role within the Business / Company"
+                aria-label="Applicant's role"
+                value={applicantRole}
+                onChange={(e)=>setApplicantRole(e.target.value)}
+              />
+            </div>
           </div>
-          <div className="col-lg-6 col-12">
-            <label for="inputEmail4" className="form-label">
-              Applicant's Phone Number
-            </label>
-            <input
-              type="text"
-              className="form-control"
-              placeholder="Applicant's Role within the Business / Company"
-              aria-label="Applicant's role"
-            />
+          <div className="row next-form">
+            <div className="col-lg-6 col-12">
+              <label for="inputEmail4" className="form-label">
+                Applicant's Email Address
+              </label>
+              <input
+                type="text"
+                className="form-control"
+                name="applicant_email"
+                placeholder="Applicant's Email Address"
+                aria-label="Applicant's email"
+                value={applicantEmail}
+                onChange={e=>setApplicantEmail(e.target.value)}
+              />
+            </div>
+            <div className="col-lg-6 col-12">
+              <label for="inputEmail4" className="form-label">
+                Applicant's Phone Number
+              </label>
+              <input
+                type="text"
+                className="form-control"
+                name="apllicant_number"
+                placeholder="Applicant's Phone Number"
+                aria-label="Applicant's phone number"
+                value={applicantNumber}
+                onChange={e=>setApplicantNumber(e.target.value)}
+              />
+            </div>
           </div>
-        </div>
-        <div className="row next-form">
-          <div className="col-lg-6 col-12">
-            <label for="inputEmail4" className="form-label">
-              Applicant's Email Address
-            </label>
-            <input
-              type="text"
-              className="form-control"
-              placeholder="Applicant's Email Address"
-              aria-label="Applicant's email"
-            />
+          <div className="left-btn">
+            <button type="button" onClick={()=>setPage(2)} className="padded-btn mybtn">
+              Next
+            </button>
           </div>
-          <div className="col-lg-6 col-12">
-            <label for="inputEmail4" className="form-label">
-              Applicant's Phone Number
-            </label>
-            <input
-              type="text"
-              className="form-control"
-              placeholder="Applicant's Phone Number"
-              aria-label="Applicant's phone number"
-            />
-          </div>
-        </div>
-        <div className="left-btn">
-          <Link to="/submit" className="padded-btn mybtn">
-            Next
-          </Link>
-        </div>
-      </form>
-    </FormComp>
+      {/* </form> */}
+    </>
   )
 }
 
