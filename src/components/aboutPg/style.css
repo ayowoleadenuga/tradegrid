@@ -1,10 +1,4 @@
-/*  */
-.accord-section{
-  background-color: blue;
-} .active-section{
-  background-color: red;
-}
-/*  */
+
 .about-header {
   padding-top: 100px  !important;
   text-align: center;
@@ -49,6 +43,7 @@
 .product-sect img {
   object-fit: cover;
   width: 100%;
+  border-radius: 10px 0px 10px 0px;
 }
 
 .tab-container {
@@ -159,7 +154,7 @@
 }
 
 
-@media screen and (max-width:1026px){
+@media screen and (max-width:1161px){
   .deal-source {
   color: #190d2d;
   display: flex;
@@ -208,7 +203,7 @@
   }
 }
 
-@media screen and (max-width:790px){
+@media screen and (max-width:907px){
   .tabs {
   padding: 20px 0;
   font-size: 22px;
@@ -227,7 +222,21 @@
 
 }
 
-@media screen and (max-width:570px){
+@media screen and (max-width:968px){
+  .left-deal,
+.right-deal {
+  max-width:380px;
+}
+
+.img-logistics .logic{
+  width: 400px !important;
+}
+}
+@media screen and (max-width:600px){
+  .left-deal,
+.right-deal {
+  max-width:100%;
+}
   .bloc-tabs {
   display: none;
 }
@@ -268,5 +277,7 @@
   margin-bottom: 250px;
 }
 
-
+.img-logistics .logic{
+  width: 100% !important;
+}
 }

@@ -63,7 +63,7 @@
 }
 
 .trade-flex .img-logistics img {
-  border-radius: 10px;
+  border-radius: 10px 0px 10px 0px;
   width: inherit;
   height: inherit;
   object-fit: cover;
@@ -270,6 +270,7 @@
 
 .news-form .input-div {
   width: 400px;
+  background-color: #fff;
 }
 
 .news-form button {
@@ -280,13 +281,18 @@
   margin: 0 10px;
 }
 
-@media screen and (max-width: 1329px) {
+@media screen and (max-width: 1329px)and (min-width:1162px) {
   .trade-flex .img {
     height: 450px;
     max-width: 500px;
     width: 100%;
     position: relative;
     margin-bottom: 50px;
+  }
+
+  .trade-flex .img, .trade-flex .img-logistics{
+    height: 380px;
+    max-width: 380px;
   }
 }
 
@@ -299,6 +305,46 @@
   }
 }
 
+@media screen and (max-width:1161px) and (min-width:949px){
+   .learn-section .home-phone {
+    width: 400px;
+  }
+
+     .trade-flex .img, .trade-flex .img-logistics{
+    height: 400px;
+    max-width: 400px;
+  }
+
+  .myform input {
+    width: 430px;
+  }
+}
+
+/* @media screen and (max-width:1111px){
+   .myform input {
+    width: 460px;
+  }
+
+   .myform .margined-input {
+    margin-top: 40px !important;
+  }
+} */
+
+@media screen and (max-width:948px) and (min-width:846px){
+ 
+   .myform .margined-input {
+    margin-top: 40px !important;
+  }
+
+   .learn-section .home-phone {
+    width: 350px;
+  }
+
+    .trade-flex .img, .trade-flex .img-logistics{
+    height: 350px;
+    max-width: 350px;
+  }
+}
 @media screen and (max-width: 1024px) {
   .top-header {
     padding: 0px 50px 100px 50px;
@@ -308,14 +354,14 @@
     max-width: 400px;
   }
 
-  .learn-section .home-phone {
+  /* .learn-section .home-phone {
     width: 450px;
   }
 
   .trade-flex .img, .trade-flex .img-logistics{
     height: 400px;
     max-width: 400px;
-  }
+  } */
 
   .accordion-section {
     display: flex;
@@ -323,12 +369,10 @@
     padding: 20px 50px;
   }
 
-  .myform input {
-    width: 400px;
-  }
+ 
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 845px) {
   .top-header {
     margin: 0;
     padding: 0px 30px 100px 30px;
@@ -349,9 +393,9 @@
     margin-top: 50px;
   }
 
-  /* .learn-btn-div {
+  .learn-btn-div {
     width: 70%;
-  } */
+  }
 
   .trade-flex .img,
   .trade-flex .img-logistics {
@@ -424,9 +468,10 @@
     margin-top: 0px;
   }
 
-  .myform .margined-input {
+   .myform .margined-input {
     margin-top: 40px !important;
   }
+ 
 }
 
 /* @media screen and (max-width:600px){
@@ -529,6 +574,10 @@
 
   .btn-div .btn-text {
     margin-bottom: 30px;
+  }
+
+  .my-textarea {
+    margin-top: 20px !important;
   }
 }
 

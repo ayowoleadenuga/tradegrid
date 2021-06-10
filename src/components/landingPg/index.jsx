@@ -8,11 +8,14 @@ import HelpFormSection from './HelpForm'
 import StartTrading from '../StartTrading'
 import Newsletter from './Newsletter'
 import MyFooter from '../footer'
+import FadeInAnimation from '../Animation'
 
 function LandingPage() {
     return (
       <div>
-        <TopHeader />
+        <FadeInAnimation direction="down" delay={1}>
+          <TopHeader />
+        </FadeInAnimation>
         <LearnSection />
         <TradeSection />
         <AccordionSect />

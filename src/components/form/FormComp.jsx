@@ -8,6 +8,7 @@ import {Link} from 'react-router-dom'
 import Next from './Next'
 import emailjs from 'emailjs-com';
 import Submit from './Submit'
+import FadeInAnimation from '../Animation'
 
 const emailjObj = {
   USER_ID: "user_q610hC24vrfmB3ywLRLse",
@@ -92,83 +93,121 @@ function FormComp() {
 
 
     return (
+         <FadeInAnimation direction="down" delay={1}>
       <div className="form-sect">
-        <div className="form-welcome-sect">
-          <img src={Small} alt="" className="small" />
-          <img src={Large} alt="" className="large" />
-          <img src={Medium} alt="" className="medium" />
-          <div className="my-absolute">
-            <Link to="/" className="navbar-brand form-nav">
-              <img src={Logo} alt="" />
-              <span className="back-home"><small>&#8592; Back to Home</small></span>
-            </Link>
+     
+          <div className="form-welcome-sect">
+            <img src={Small} alt="" className="small" />
+            <img src={Large} alt="" className="large" />
+            <img src={Medium} alt="" className="medium" />
+            <div className="my-absolute">
+              <Link to="/" className="navbar-brand form-nav">
+                <img src={Logo} alt="" />
+                <span className="back-home">
+                  <small>&#8592; Back to Home</small>
+                </span>
+              </Link>
 
-            <h3>Welcome</h3>
-            <p>TradeGrid has just arrived in your city! </p>
-            <p>
-              We are the world’s number 1 marketplace for Oil & Gas products,
-              having operations in a growing number of countries across the
-              globe. In each of these countries, we partner with more than 80%
-              of the leading product marketers, refineries, and mid-stream
-              players, to deliver exceptional buying experiences through our
-              digital platform.
-            </p>
-            <p>
-              We are excited to meet with leading petroleum products marketers
-              across the globe.
-            </p>
-            <p>Kindly fill in the details and our team will be in touch.</p>
+              <h3>Welcome</h3>
+              <p>TradeGrid has just arrived in your city! </p>
+              <p>
+                We are the world’s number 1 marketplace for Oil & Gas products,
+                having operations in a growing number of countries across the
+                globe. In each of these countries, we partner with more than 80%
+                of the leading product marketers, refineries, and mid-stream
+                players, to deliver exceptional buying experiences through our
+                digital platform.
+              </p>
+              <p>
+                We are excited to meet with leading petroleum products marketers
+                across the globe.
+              </p>
+              <p>Kindly fill in the details and our team will be in touch.</p>
+            </div>
           </div>
-        </div>
+   
         <div className="form-field">
           <div className="title-flex">
             <h5>Access Request Form</h5>
             <div className="colored-div">
               <div className="pink-div"></div>
-              <div className={page === 1 ? "grey-div" : "pink-div"}></div>
+              <div className={page === 1 ? 'grey-div' : 'pink-div'}></div>
             </div>
           </div>
           <form onSubmit={handleSubmit} id="accessForm">
-          {page === 1 && 
-          <Next 
-            retail={retail} setRetail={setRetail}
-            bulk={bulk} setBulk={setBulk}
-            depot={depot} setDepot={setDepot}
-            international={international} setInternational={setInternational}
-            buyer={buyer} setBuyer={setBuyer}
-            other={other} setOther={setOther}
-            businessName={businessName} setBusinessName={setBusinessName}
-            businessLocation={businessLocation} setBusinessLocation={setBusinessLocation}
-            applicantName={applicantName} setApplicantName={setApplicantName}
-            applicantRole={applicantRole} setApplicantRole={setApplicantRole}
-            applicantEmail={applicantEmail} setApplicantEmail={setApplicantEmail}
-            applicantNumber={applicantNumber} setApplicantNumber={setApplicantNumber}
-            setPage={setPage}
-          />}
-          {page === 2 &&
-          <Submit 
-            loading={loading} success={success} error={error}
-            weeklyDropdown={weeklyDropdown} setWeeklyDropdown={setWeeklyDropdown}
-            interestedInBuying={interestedInBuying} setInterestedInBuying={setInterestedInBuying}
-            interestedInSelling={interestedInSelling} setInterestedInSelling={setInterestedInSelling}
-            interestedInCredit={interestedInCredit} setInterestedInCredit={setInterestedInCredit}
-            interestedInEscrowPayment={interestedInEscrowPayment} setInterestedInEscrowPayment={setInterestedInEscrowPayment}
-            interestedInOthers={interestedInOthers} setInterestedInOthers={setInterestedInOthers}
-            productInterestPMS={productInterestPMS} setProductInterestPMS={setProductInterestPMS}
-            productInterestAGO={productInterestAGO} setProductInterestAGO={setProductInterestAGO}
-            productInterestLPG={productInterestLPG} setProductInterestLPG={setProductInterestLPG}
-            productInterestDPK={productInterestDPK} setProductInterestDPK={setProductInterestDPK}
-            productInterestCNG={productInterestCNG} setProductInterestCNG={setProductInterestCNG}
-            productInterestLNG={productInterestLNG} setProductInterestLNG={setProductInterestLNG}
-            productInterestLubricants={productInterestLubricants} setProductInterestLubricants={setProductInterestLubricants}
-            productInterestPE={productInterestPE} setProductInterestPE={setProductInterestPE}
-            productInterestBaseOils={productInterestBaseOils} setProductInterestBaseOils={setProductInterestBaseOils}
-            productInterestOther={productInterestOther} setProductInterestOther={setProductInterestOther}
-            setPage={setPage}
-          />}
+            {page === 1 && (
+              <Next
+                retail={retail}
+                setRetail={setRetail}
+                bulk={bulk}
+                setBulk={setBulk}
+                depot={depot}
+                setDepot={setDepot}
+                international={international}
+                setInternational={setInternational}
+                buyer={buyer}
+                setBuyer={setBuyer}
+                other={other}
+                setOther={setOther}
+                businessName={businessName}
+                setBusinessName={setBusinessName}
+                businessLocation={businessLocation}
+                setBusinessLocation={setBusinessLocation}
+                applicantName={applicantName}
+                setApplicantName={setApplicantName}
+                applicantRole={applicantRole}
+                setApplicantRole={setApplicantRole}
+                applicantEmail={applicantEmail}
+                setApplicantEmail={setApplicantEmail}
+                applicantNumber={applicantNumber}
+                setApplicantNumber={setApplicantNumber}
+                setPage={setPage}
+              />
+            )}
+            {page === 2 && (
+              <Submit
+                loading={loading}
+                success={success}
+                error={error}
+                weeklyDropdown={weeklyDropdown}
+                setWeeklyDropdown={setWeeklyDropdown}
+                interestedInBuying={interestedInBuying}
+                setInterestedInBuying={setInterestedInBuying}
+                interestedInSelling={interestedInSelling}
+                setInterestedInSelling={setInterestedInSelling}
+                interestedInCredit={interestedInCredit}
+                setInterestedInCredit={setInterestedInCredit}
+                interestedInEscrowPayment={interestedInEscrowPayment}
+                setInterestedInEscrowPayment={setInterestedInEscrowPayment}
+                interestedInOthers={interestedInOthers}
+                setInterestedInOthers={setInterestedInOthers}
+                productInterestPMS={productInterestPMS}
+                setProductInterestPMS={setProductInterestPMS}
+                productInterestAGO={productInterestAGO}
+                setProductInterestAGO={setProductInterestAGO}
+                productInterestLPG={productInterestLPG}
+                setProductInterestLPG={setProductInterestLPG}
+                productInterestDPK={productInterestDPK}
+                setProductInterestDPK={setProductInterestDPK}
+                productInterestCNG={productInterestCNG}
+                setProductInterestCNG={setProductInterestCNG}
+                productInterestLNG={productInterestLNG}
+                setProductInterestLNG={setProductInterestLNG}
+                productInterestLubricants={productInterestLubricants}
+                setProductInterestLubricants={setProductInterestLubricants}
+                productInterestPE={productInterestPE}
+                setProductInterestPE={setProductInterestPE}
+                productInterestBaseOils={productInterestBaseOils}
+                setProductInterestBaseOils={setProductInterestBaseOils}
+                productInterestOther={productInterestOther}
+                setProductInterestOther={setProductInterestOther}
+                setPage={setPage}
+              />
+            )}
           </form>
         </div>
       </div>
+      </FadeInAnimation>
     )
 }
 

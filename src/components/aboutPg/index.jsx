@@ -4,11 +4,15 @@ import MyFooter from '../footer'
 import AboutHeader from './TopAboutHeader'
 import OurProduct from './OurProduct'
 import StartTrading from '../StartTrading'
+import FadeInAnimation from '../Animation'
 
 function AboutPage() {
   return (
     <div>
-      <AboutHeader />
+      <FadeInAnimation direction="down" delay={1}>
+        <AboutHeader />
+      </FadeInAnimation>
+
       <OurProduct />
       <StartTrading />
       <MyFooter />

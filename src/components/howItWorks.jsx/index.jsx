@@ -5,11 +5,14 @@ import SubmitEntry from './SubmitEntry'
 import TopWork from './TopWork'
 import WelcomeNote from './Welcome'
 import WorkCard from './WorkCard'
+import FadeInAnimation from '../Animation'
 
 function HowItWorks() {
   return (
     <div>
-      <TopWork />
+      <FadeInAnimation direction="down" delay={1}>
+        <TopWork />
+      </FadeInAnimation>
       <WelcomeNote />
       <WorkCard />
       <MarketEntry />

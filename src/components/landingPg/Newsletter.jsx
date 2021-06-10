@@ -1,7 +1,32 @@
 import React, { useState, useEffect } from 'react'
 import NewsTank from '../../assets/newsletter.png'
 import emailjs from 'emailjs-com';
+import { makeStyles, withStyles } from '@material-ui/core/styles'
+import { TextField } from '@material-ui/core'
 
+const CssTextField = withStyles({
+  root: {
+    '& label.Mui-focused': {
+      // color: 'rgba(150, 150, 150, 0.2)',
+      color: 'black',
+    },
+    '& .MuiInput-underline:after': {
+      borderBottomColor: 'white',
+    },
+    '& .MuiOutlinedInput-root': {
+      '& fieldset': {
+        borderColor: 'rgba(150, 150, 150, 0.2)',
+        // background: '#fff',
+      },
+      '&:hover fieldset': {
+        borderColor: 'rgba(150, 150, 150, 0.2)',
+      },
+      '&.Mui-focused fieldset': {
+        borderColor: 'rgba(150, 150, 150, 0.2)',
+      },
+    },
+  },
+})(TextField)
 
 const sectionStyle = {
   backgroundImage: `linear-gradient(to bottom, rgba(14, 31, 51, 0.7),
@@ -52,15 +77,14 @@ function Newsletter() {
   }, [success, error])
   return (
     <section className="news-div" style={sectionStyle}>
-     
-        <h3>Subscribe to our Newsletter!</h3>
-        <p>
-          Stay up-to-date with announcements, news & updates, discount deals and much
-          more.
-        </p>
-        <form className="news-form" onSubmit={handleSubmit}>
-          <div className="input-div">
-            <input
+      <h3>Subscribe to our Newsletter!</h3>
+      <p>
+        Stay up-to-date with announcements, news & updates, discount deals and
+        much more.
+      </p>
+      <form className="news-form" onSubmit={handleSubmit}>
+        <div className="input-div">
+          {/* <input
               type="email"
               className="form-control"
               id="exampleInputEmail1"
@@ -68,19 +92,43 @@ function Newsletter() {
               name="email"
               onChange={(e)=> setEmail(e.target.value)}
               aria-describedby="emailHelp"
-            />
-          </div>
-          <div>
-            <button className="mybtn padded-btn">
-              {loading ? <small><i>submitting...</i></small>: "Subscribe"}
-            </button>
-          </div>
-          <div>
-          {success && <p style={{color: "green"}}>Your message was sent successfully!</p>}
-          {error && <p style={{color: "red"}}>Oops! An error has occured. Please try again</p>}
-          </div>
-        </form>
-      
+            /> */}
+          <CssTextField
+            className="input-div"
+            label="Your Email"
+            variant="outlined"
+            id="customoutlined-input"
+            value={email}
+            disabled={loading}
+            name="email"
+            required
+            onChange={(e) => setEmail(e.target.value)}
+          />
+        </div>
+        <div>
+          <button className="mybtn padded-btn">
+            {loading ? (
+              <small>
+                <i>submitting...</i>
+              </small>
+            ) : (
+              'Subscribe'
+            )}
+          </button>
+        </div>
+        <div>
+          {success && (
+            <p style={{ color: 'green' }}>
+              Your message was sent successfully!
+            </p>
+          )}
+          {error && (
+            <p style={{ color: 'red' }}>
+              Oops! An error has occured. Please try again
+            </p>
+          )}
+        </div>
+      </form>
     </section>
   )
 }

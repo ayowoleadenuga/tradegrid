@@ -69,7 +69,7 @@
   font-weight: 400;
 }
 
-@media (max-width:1024px){
+@media screen and (max-width:1024px){
   .profile-left img{
     width: 400px;
 
@@ -79,9 +79,7 @@
     line-height: 45px !important;
   }
 
-  .buyer-seller {
-    max-width: 500px ;
-  }
+  
 
 .buyer-sect .right-deal {
   width:300px;
@@ -94,11 +92,35 @@
 
 }
 
-@media (max-width:769px){
-  .profile-left img{
-    width: 400px;
+@media screen and (max-width:890px){
+  .buyer-profile-sect .profile-left{
+   width:300px;
+  height: 100%;
+}
+
+.buyer-sect .right-deal {
+  width:300px;
+  height: 100%;
+
+}
+}
+
+@media screen and (max-width:781px){
+  .buyer-profile-sect .deal-source{
+    flex-direction: column-reverse;
+    margin-top: 0px !important;
 
   }
+
+  .app-store {
+   flex-wrap: nowrap;
+  }
+
+  .buyer-profile-sect .profile-left{
+   width:400px;
+  height: 100%;
+  margin-top: 50px;
+}
 
   .buyer-seller {
     max-width: 100% ;
@@ -106,31 +128,31 @@
   }
 
 .buyer-sect .right-deal {
-  width:400px;
+  width:300px;
   height: 100%;
-  margin: auto;
-}
-
-.buyer-profile-sect .profile-left{
-   width:100%;
-  height: 100%;
-  margin-bottom: 50px;
+    margin: 40px 0 0 0;
 }
 
 .buyer-profile-sect .profile-left img{
    width: inherit;
   height: inherit;
   object-fit: cover;
-  margin-top: -50px;
+  margin-top: 0px;
 }
 
 }
 
 @media screen and (max-width:550px){
  .buyer-sect .right-deal {
-  width:300px;
+  
   height: 100%;
   margin: auto;
+}
+
+  .buyer-profile-sect .profile-left{
+   width:100%;
+  height: 100%;
+  margin-top: 50px;
 }
 
   .buyer-h5{
@@ -140,8 +162,14 @@
 
 @media screen and (max-width:380px){
  .buyer-sect .right-deal {
-  width:200px;
+  width:100%;
   height: 100%;
   margin: auto;
 }
+}
+
+@media screen and (max-width:320px){
+  .app-store{
+    flex-wrap: wrap;
+  }
 }

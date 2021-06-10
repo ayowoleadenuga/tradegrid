@@ -39,7 +39,7 @@ function MyNav({logo, clsName, clsBar, active}) {
             </li>
 
             <li className="">
-              <a href="#f_a_q" className={clsx('nav-link ', clsName)}>
+              <a href="/#f_a_q" className={clsx('nav-link ', clsName)}>
                 FAQ
               </a>
             </li>
@@ -99,7 +99,7 @@ function MyNav({logo, clsName, clsBar, active}) {
 
             <li className="">
               <a
-                href="#f_a_q"
+                href="/#f_a_q"
                 className={clsx('nav-link ', clsName)}
                 onClick={navToggler}
               >

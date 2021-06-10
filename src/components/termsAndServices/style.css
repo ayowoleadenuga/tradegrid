@@ -1,12 +1,14 @@
 .top-terms {
   background-color: #f9f9f9;
-  /* padding: 50px 100px; */
+   padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 80px;
 }
 
 .terms-header {
   max-width: 700px;
   width: 100%;
-  margin: 120px auto 50px auto;
+  margin: 120px auto 0px auto;
   text-align: center;
 }
 
@@ -49,4 +51,25 @@ hr {
   font-size: 16px;
   font-weight: 700;
   line-height: 32px;
+}
+
+@media screen and (max-width: 1299px) {
+  .top-terms {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .top-terms {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media (max-width: 415px) {
+  .top-terms {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }

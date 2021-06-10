@@ -5,15 +5,17 @@ import MyFooter from '../footer'
 import Home from '../../assets/buyer-phone.png'
 import AdvertBuy from './Advert'
 import BuyerProfile from './BuyerProfile'
-
+import FadeInAnimation from '../Animation'
 function BuyerPage() {
     return (
-        <div>
-            <TopBuyer src={Home} buyers="Buyers" action="buying" />
-            <AdvertBuy/>
-            <BuyerProfile/>
-            <MyFooter/>
-        </div>
+      <div>
+        <FadeInAnimation direction="down" delay={1}>
+          <TopBuyer src={Home} buyers="Buyers" action="buying" />
+        </FadeInAnimation>
+        <AdvertBuy />
+        <BuyerProfile />
+        <MyFooter />
+      </div>
     )
 }
 
